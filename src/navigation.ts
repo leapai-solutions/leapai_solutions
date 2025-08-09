@@ -3,12 +3,12 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Services',
-      href: getPermalink('/services'),
-    },
-    {
       text: 'About',
       href: getPermalink('/about'),
+    },
+    {
+      text: 'Services',
+      href: getPermalink('/services'),
     },
     {
       text: 'Blog',
@@ -27,11 +27,9 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'Data Strategy', href: getPermalink('/services') },
-        { text: 'Machine Learning', href: getPermalink('/services') },
-        { text: 'Business Intelligence', href: getPermalink('/services') },
-        { text: 'Data Engineering', href: getPermalink('/services') },
-        { text: 'AI Implementation', href: getPermalink('/services') },
+        { text: 'AI Enablement', href: getPermalink('/services') },
+        { text: 'AI Acceleration', href: getPermalink('/services') },
+        { text: 'AI Integration', href: getPermalink('/services') },
       ],
     },
     {
