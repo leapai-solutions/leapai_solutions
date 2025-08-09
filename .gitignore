@@ -22,3 +22,6 @@ pnpm-debug.log*
 pnpm-lock.yaml
 
 .astro
+
+# Claude AI Documentation (optional - remove this line to commit Claude docs)
+# .claude/

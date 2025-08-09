@@ -1,6 +1,6 @@
 site:
   name: LeapAI Solutions
-  site: 'https://leapai.netlify.app'
+  site: 'https://leapai-solutions.netlify.app'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: LeapAI Solutions
+    template: '%s — LeapAI Solutions'
+  description: "Professional data and AI solutions provider. We help businesses transform their data into actionable insights through machine learning, analytics, and intelligent automation services."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: LeapAI Solutions
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@leapaisolutions'
+    site: '@leapaisolutions'
     cardType: summary_large_image
 
 i18n:
@@ -66,7 +66,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: null # Add your Google Analytics ID when ready: "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

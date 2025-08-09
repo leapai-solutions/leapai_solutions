@@ -5,74 +5,87 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact LeapAI Solutions - Get Started with Your Data & AI Journey',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="Contact" title="Ready to Transform Your Business with Data & AI?" />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="Get Started with Professional Data & AI Solutions"
+    subtitle="Ready to unlock the power of your data? Tell us about your challenges and goals, and we'll develop a customized solution strategy for your business."
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'Full Name',
       },
       {
         type: 'email',
         name: 'email',
-        label: 'Email',
+        label: 'Business Email',
+      },
+      {
+        type: 'text',
+        name: 'company',
+        label: 'Company Name',
+      },
+      {
+        type: 'tel',
+        name: 'phone',
+        label: 'Phone Number',
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Project Details - Tell us about your data challenges, AI goals, or specific requirements',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'By submitting this form, you agree to our privacy policy and consent to being contacted about our data and AI solutions.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Our solutions architects typically respond within 4-8 business hours with next steps."
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="How We Can Help Your Business"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'Strategy Consultation',
+        description: `Schedule a free consultation to discuss your data strategy, AI readiness assessment, and custom solution roadmapping for your specific industry and business needs.`,
+        icon: 'tabler:target',
       },
       {
-        title: 'Contact sales',
+        title: 'Technical Implementation',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+          'Get expert guidance on machine learning development, data engineering, AI deployment, and integration with your existing business systems and workflows.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Technical support',
+        title: 'Training & Support',
         description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+          'Access comprehensive training programs, ongoing technical support, and change management assistance to ensure successful adoption of data and AI solutions.',
+        icon: 'tabler:school',
       },
       {
         title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
+        description: '+1 (555) 123-LEAP',
+        icon: 'tabler:phone',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'info@leapaisolutions.com',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:map-pin',
+        title: 'Business Hours',
+        description: 'Monday - Friday: 9:00 AM - 6:00 PM EST',
+        icon: 'tabler:clock',
       },
     ]}
   />
