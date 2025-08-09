@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: LeapAI Solutions
+  site: 'https://leapai.netlify.app'
   base: '/'
   trailingSlash: false
 
