@@ -7,7 +7,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Data & AI Services - LeapAI Solutions',
+  title: 'AI Adoption Accelerator - LeapAI Solutions',
 };
 ---
 
@@ -16,73 +16,75 @@ const metadata = {
 
   <Hero
     tagline="Services"
-    title="Transform Your Business with Professional Data & AI Solutions"
-    subtitle="We deliver comprehensive data science and AI services designed to unlock insights, automate processes, and drive measurable business outcomes across industries."
-    actions={[{ variant: 'primary', text: 'Get Started', href: '/contact' }]}
+    title="AI Adoption Accelerator - Get AI Running in Production Fast"
+    subtitle="We accelerate practical AI adoption in business with delivery-focused packages. No lengthy strategy consulting - just build, integrate, and deploy AI solutions with measurable ROI."
+    actions={[{ variant: 'primary', text: 'Start Your AI Journey', href: '/contact' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80',
-      alt: 'LeapAI Solutions - Professional Data & AI Services',
+      alt: 'LeapAI Solutions - AI Adoption Accelerator',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our Comprehensive Service Portfolio"
-    subtitle="End-to-end data and AI solutions tailored to your business needs and industry requirements."
+    title="AI Adoption Accelerator - Tiered Packages"
+    subtitle="Productized, outcome-based packages with clear deliverables and timelines. Get AI running in production without lengthy consulting cycles."
     columns={3}
     items={[
       {
-        title: 'Data Strategy & Consulting',
+        title: 'Tier 1: Foundation (4-6 weeks)',
         description:
-          'Strategic roadmap development for data initiatives, technology selection, and AI adoption to maximize ROI and competitive advantage.',
-        icon: 'tabler:target',
-      },
-      {
-        title: 'Machine Learning Development',
-        description:
-          'Custom ML models and algorithms designed for your specific use cases, from predictive analytics to recommendation systems.',
-        icon: 'tabler:brain',
-      },
-      {
-        title: 'Business Intelligence',
-        description: `Transform raw data into actionable insights with custom dashboards, automated reports, and real-time analytics solutions.`,
-        icon: 'tabler:dashboard',
-      },
-      {
-        title: 'Data Engineering',
-        description:
-          'Build robust data pipelines, warehouses, and cloud infrastructure to support your analytics and AI initiatives at scale.',
+          'Build AI-ready data platform with modern architecture (Databricks, Snowflake, BigQuery), data pipelines, quality controls, and centralized storage. Get your data foundation right the first time.',
         icon: 'tabler:database',
       },
       {
-        title: 'AI Implementation',
+        title: 'Tier 2: Acceleration (6-12 weeks)',
         description:
-          'End-to-end AI deployment services, from proof of concept to production systems with ongoing monitoring and optimization.',
-        icon: 'tabler:robot',
+          'Deploy 1-2 production AI solutions with measurable ROI. Includes MLOps pipelines, business system integration, and team training. Prove AI value fast.',
+        icon: 'tabler:rocket',
       },
       {
-        title: 'Process Automation',
+        title: 'Tier 3: Continuous (Ongoing)',
         description:
-          'Intelligent automation solutions to streamline operations, reduce manual work, and improve efficiency across business processes.',
+          'Scale AI across your business with quarterly automation cycles, model monitoring, performance optimization, and proactive insights. AI as a core business capability.',
         icon: 'tabler:refresh',
       },
       {
-        title: 'Data Visualization',
+        title: 'Data Platform Implementation',
         description:
-          'Interactive dashboards and compelling data visualizations that make complex information accessible and actionable for stakeholders.',
-        icon: 'tabler:chart-line',
+          'Deploy cloud or hybrid platforms optimized for AI workloads. Design pipelines from CRMs, ERPs, IoT to unified environments. Ready for immediate AI use.',
+        icon: 'tabler:cloud-computing',
       },
       {
-        title: 'Training & Support',
-        description: `Comprehensive training programs and ongoing support to ensure your team can effectively leverage data and AI tools.`,
-        icon: 'tabler:school',
+        title: 'AI Integration Services',
+        description:
+          'Seamlessly integrate AI into existing business systems (Salesforce, SAP, Microsoft 365). Connect pre-built solutions for immediate efficiency gains.',
+        icon: 'tabler:plug-connected',
       },
       {
-        title: 'Cloud Migration',
+        title: 'Production AI Development',
         description:
-          'Seamless migration of data systems to cloud platforms with optimized architecture for performance, security, and cost-efficiency.',
-        icon: 'tabler:cloud-upload',
+          'End-to-end AI/ML development for forecasting, classification, anomaly detection. Generative AI tools, computer vision, and custom APIs. Built for production.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Business Process AI Automation',
+        description:
+          'Combine AI with RPA tools to eliminate repetitive tasks. Embed AI insights into workflows. Automated document processing and decision support.',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'AI-Powered Analytics & Dashboards',
+        description:
+          'Interactive dashboards with embedded predictive models. Natural language query interfaces. Automated insight delivery when patterns are detected.',
+        icon: 'tabler:dashboard',
+      },
+      {
+        title: 'Managed AI/ML Operations',
+        description:
+          'Monitor model performance, prevent drift, automated retraining. Keep AI systems secure, performant, and up-to-date. Continuous improvement programs.',
+        icon: 'tabler:settings-automation',
       },
     ]}
   />
@@ -93,37 +95,37 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'High-Quality Designs',
+        title: 'Fast Implementation',
         description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+          'Get AI solutions deployed in production within 4-12 weeks, not months. Our battle-tested frameworks and pre-built components accelerate delivery.',
+        icon: 'tabler:bolt',
       },
       {
-        title: 'Customization Tools',
+        title: 'Production-Ready Architecture',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
+          'Built for scale and reliability from day one. Cloud-native platforms, automated pipelines, and enterprise-grade security and governance.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Pre-Designed Elements',
+        title: 'Measurable ROI',
         description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
+          'Every AI solution is designed to deliver clear business value with trackable metrics. No black box solutions - you see exactly how AI drives results.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Preview and Mockup Views',
+        title: 'Seamless Integration',
         description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          'AI that works with your existing systems. No data silos or workflow disruption - just enhanced capabilities that fit naturally into your operations.',
+        icon: 'tabler:puzzle',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      alt: 'AI Implementation Features',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Our AI Adoption Accelerator</h3>
     </Fragment>
   </Content>
 
@@ -133,77 +135,77 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: 'No Strategy Paralysis',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
+          'Skip lengthy consulting cycles and strategy documents. Get straight to building and deploying AI solutions that deliver immediate business impact.',
         icon: 'tabler:clock',
       },
       {
-        title: 'Professional Appearance',
+        title: 'Future-Ready Foundation',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
+          'Data platforms built for continuous AI expansion. Your foundation scales with your ambitions - add new AI capabilities as your business grows.',
+        icon: 'tabler:building-fortress',
       },
       {
-        title: 'Cost-Efficiency',
+        title: 'Predictable Investment',
         description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
+          'Clear pricing, timelines, and deliverables. No open-ended consulting fees - know exactly what you get and when you get it.',
         icon: 'tabler:coin',
       },
       {
-        title: 'Instant Download',
+        title: 'Continuous Innovation',
         description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
+          'Quarterly AI feature rollouts keep you ahead of competition. Your AI capabilities continuously evolve with your business needs.',
+        icon: 'tabler:sparkles',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      alt: 'AI Adoption Benefits',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Business Benefits</h3>
     </Fragment>
   </Content>
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title="Real Results from AI Adoption Clients"
     testimonials={[
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        testimonial: `LeapAI delivered our demand forecasting AI in 8 weeks. It reduced inventory costs by 23% in the first quarter alone. No lengthy strategy phase - they just built it and it works.`,
+        name: 'Sarah Chen',
+        job: 'Operations Director, Manufacturing',
         image: {
           src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          alt: 'Sarah Chen Image',
         },
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        testimonial: `Their Foundation tier gave us a proper data platform in 5 weeks. Now we can launch new AI projects without starting from scratch every time. The ROI is already clear.`,
+        name: 'Marcus Rodriguez',
+        job: 'CTO, FinTech Startup',
         image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Marcus Rodriguez Image',
         },
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        testimonial: `Finally found an AI partner that focuses on implementation, not endless planning. Their automated document processing saved us 15 hours per week immediately.`,
+        name: 'Jennifer Walsh',
+        job: 'VP Operations, Professional Services',
         image: {
           src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          alt: 'Jennifer Walsh Image',
         },
       },
     ]}
     callToAction={{
       target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
+      text: 'View more success stories...',
+      href: '/case-studies',
       icon: 'tabler:chevron-right',
     }}
   />
@@ -214,11 +216,11 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
+        text: 'Start Your AI Journey',
+        href: '/contact',
       },
     ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    title="Ready to Accelerate Your AI Adoption?"
+    subtitle="Skip the strategy consulting and get AI working in production. Start with our Foundation tier and see results in weeks, not months."
   />
 </Layout>
