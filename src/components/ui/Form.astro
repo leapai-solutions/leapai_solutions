@@ -5,7 +5,8 @@ import Button from '~/components/ui/Button.astro';
 const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props;
 ---
 
-<form>
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
   {
     inputs &&
       inputs.map(
@@ -84,4 +85,71 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
       </div>
     )
   }
+
+  <!-- Success/Error Messages -->
+  <div id="form-messages" class="mt-4 hidden">
+    <div id="success-message" class="hidden p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+      <strong>Success!</strong> Thank you for your message. We'll get back to you within 4-8 business hours.
+    </div>
+    <div id="error-message" class="hidden p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+      <strong>Error!</strong> There was a problem sending your message. Please try again.
+    </div>
+  </div>
 </form>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form[name="contact"]');
+    const submitButton = form?.querySelector('button[type="submit"]');
+    const successMessage = document.getElementById('success-message');
+    const errorMessage = document.getElementById('error-message');
+    const messagesContainer = document.getElementById('form-messages');
+
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Disable submit button
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+        }
+        
+        // Hide previous messages
+        successMessage?.classList.add('hidden');
+        errorMessage?.classList.add('hidden');
+        messagesContainer?.classList.add('hidden');
+        
+        try {
+          const formData = new FormData(form);
+          
+          const response = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+          });
+          
+          if (response.ok) {
+            // Show success message
+            successMessage?.classList.remove('hidden');
+            messagesContainer?.classList.remove('hidden');
+            form.reset();
+          } else {
+            throw new Error('Network response was not ok');
+          }
+          
+        } catch (error) {
+          // Show error message
+          errorMessage?.classList.remove('hidden');
+          messagesContainer?.classList.remove('hidden');
+        } finally {
+          // Re-enable submit button
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Contact us';
+          }
+        }
+      });
+    }
+  });
+</script>
