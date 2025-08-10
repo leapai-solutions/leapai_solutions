@@ -11,7 +11,7 @@ tags:
   - decision making
   - strategy
 metadata:
-  canonical: https://leapai-solutions.netlify.app/data-driven-decision-making
+  canonical: https://leapai-solutions.netlify.app/blog/data-driven-decision-making
 ---
 
 In the modern business environment, the ability to make informed, data-driven decisions has become a critical competitive advantage. Organizations that effectively leverage data for decision-making consistently outperform their peers in terms of profitability, efficiency, and customer satisfaction.

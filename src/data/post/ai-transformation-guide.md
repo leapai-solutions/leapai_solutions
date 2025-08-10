@@ -10,7 +10,7 @@ tags:
   - digital transformation
   - business strategy
 metadata:
-  canonical: https://leapai-solutions.netlify.app/ai-transformation-guide
+  canonical: https://leapai-solutions.netlify.app/blog/ai-transformation-guide
 ---
 
 In today's rapidly evolving business landscape, artificial intelligence has become a critical differentiator for organizations seeking sustainable growth and competitive advantage. However, successful AI transformation requires more than just adopting new technologies—it demands a strategic, comprehensive approach.

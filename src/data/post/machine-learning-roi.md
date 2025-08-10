@@ -11,7 +11,7 @@ tags:
   - business value
   - strategy
 metadata:
-  canonical: https://leapai-solutions.netlify.app/machine-learning-roi
+  canonical: https://leapai-solutions.netlify.app/blog/machine-learning-roi
 ---
 
 Machine learning represents one of the most promising technological investments for modern businesses, yet many organizations struggle to realize meaningful returns from their ML initiatives. The challenge isn't just technical—it's strategic, organizational, and often cultural.
