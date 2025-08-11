@@ -11,7 +11,7 @@ metadata:
   title:
     default: LeapAI Solutions
     template: '%s — LeapAI Solutions'
-  description: "Professional data and AI solutions provider. We help businesses transform their data into actionable insights through machine learning, analytics, and intelligent automation services."
+  description: 'Professional data and AI solutions provider. We help businesses transform their data into actionable insights through machine learning, analytics, and intelligent automation services.'
   robots:
     index: true
     follow: true
@@ -23,8 +23,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@leapaisolutions'
-    site: '@leapaisolutions'
+    handle: '@leapai-solutions'
+    site: '@leapai-solutions'
     cardType: summary_large_image
 
 i18n:

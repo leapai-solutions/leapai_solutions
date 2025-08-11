@@ -27,7 +27,6 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'AI Enablement', href: getPermalink('/services') },
         { text: 'AI Acceleration', href: getPermalink('/services') },
         { text: 'AI Integration', href: getPermalink('/services') },
       ],
