@@ -7,7 +7,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'AI Adoption Accelerator - LeapAI Solutions',
+  title: 'Data & AI Services - LeapAI Solutions',
 };
 ---
 
@@ -16,75 +16,75 @@ const metadata = {
 
   <Hero
     tagline="Services"
-    title="AI Adoption Accelerator - Get AI Running in Production Fast"
-    subtitle="We accelerate practical AI adoption in business with delivery-focused packages. No lengthy strategy consulting - just build, integrate, and deploy AI solutions with measurable ROI."
-    actions={[{ variant: 'primary', text: 'Start Your AI Journey', href: '/contact' }]}
+    title="Data & AI Solutions That Transform Business"
+    subtitle="Comprehensive services organized into two core areas: building robust data foundations and accelerating AI adoption. From data platforms to production AI systems."
+    actions={[{ variant: 'primary', text: 'Get Started', href: '/contact' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80',
-      alt: 'LeapAI Solutions - AI Adoption Accelerator',
+      alt: 'LeapAI Solutions - Data & AI Services',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="AI Adoption Accelerator - Tiered Packages"
-    subtitle="Productized, outcome-based packages with clear deliverables and timelines. Get AI running in production without lengthy consulting cycles."
-    columns={3}
+    title="Data Services"
+    subtitle="Build the robust data foundation your business needs for successful AI implementations and data-driven decision making."
+    columns={2}
     items={[
-      {
-        title: 'Tier 1: Foundation (4-6 weeks)',
-        description:
-          'Build AI-ready data platform with modern architecture (Databricks, Snowflake, BigQuery), data pipelines, quality controls, and centralized storage. Get your data foundation right the first time.',
-        icon: 'tabler:database',
-      },
-      {
-        title: 'Tier 2: Acceleration (6-12 weeks)',
-        description:
-          'Deploy 1-2 production AI solutions with measurable ROI. Includes MLOps pipelines, business system integration, and team training. Prove AI value fast.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Tier 3: Continuous (Ongoing)',
-        description:
-          'Scale AI across your business with quarterly automation cycles, model monitoring, performance optimization, and proactive insights. AI as a core business capability.',
-        icon: 'tabler:refresh',
-      },
       {
         title: 'Data Platform Implementation',
         description:
-          'Deploy cloud or hybrid platforms optimized for AI workloads. Design pipelines from CRMs, ERPs, IoT to unified environments. Ready for immediate AI use.',
-        icon: 'tabler:cloud-computing',
+          'Build unified, scalable, and secure data platforms leveraging lakehouse architectures that support both real-time and batch processing. Incorporate agentic storage, metadata management, feature stores, and automated data pipelines.',
+        icon: 'tabler:server-2',
+        callToAction: {
+          target: '_self',
+          text: 'Learn More',
+          href: '/services/data',
+        },
+      },
+      {
+        title: 'Data Architecture & Engineering',
+        description:
+          'Engineer robust data architectures (cloud, hybrid, or on-premises) designed for optimal AI workload performance, governance, and data trust. Integration of all data sources for AI-ready environments.',
+        icon: 'tabler:topology-star-3',
+        callToAction: {
+          target: '_self',
+          text: 'Learn More',
+          href: '/services/data',
+        },
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="AI Services"
+    subtitle="Accelerate your AI adoption with practical solutions that deliver immediate business value and measurable outcomes."
+    columns={2}
+    items={[
+      {
+        title: 'AI Adoption Acceleration Services',
+        description:
+          'Rapid deployment and scaled integration of AI tools (generative AI, predictive analytics, automation systems) for everyday business processes. Move beyond experimentation into enterprise-wide AI solutions with measurable outcomes.',
+        icon: 'tabler:rocket',
+        callToAction: {
+          target: '_self',
+          text: 'Learn More',
+          href: '/services/ai',
+        },
       },
       {
         title: 'AI Integration Services',
         description:
-          'Seamlessly integrate AI into existing business systems (Salesforce, SAP, Microsoft 365). Connect pre-built solutions for immediate efficiency gains.',
+          'Seamlessly integrate advanced AI tools into existing business systems (ERP, CRM, legacy infrastructure). Connect pre-built AI solutions to business workflows for immediate efficiency gains and ROI.',
         icon: 'tabler:plug-connected',
-      },
-      {
-        title: 'Production AI Development',
-        description:
-          'End-to-end AI/ML development for forecasting, classification, anomaly detection. Generative AI tools, computer vision, and custom APIs. Built for production.',
-        icon: 'tabler:brain',
-      },
-      {
-        title: 'Business Process AI Automation',
-        description:
-          'Combine AI with RPA tools to eliminate repetitive tasks. Embed AI insights into workflows. Automated document processing and decision support.',
-        icon: 'tabler:robot',
-      },
-      {
-        title: 'AI-Powered Analytics & Dashboards',
-        description:
-          'Interactive dashboards with embedded predictive models. Natural language query interfaces. Automated insight delivery when patterns are detected.',
-        icon: 'tabler:dashboard',
-      },
-      {
-        title: 'Managed AI/ML Operations',
-        description:
-          'Monitor model performance, prevent drift, automated retraining. Keep AI systems secure, performant, and up-to-date. Continuous improvement programs.',
-        icon: 'tabler:settings-automation',
+        callToAction: {
+          target: '_self',
+          text: 'Learn More',
+          href: '/services/ai',
+        },
       },
     ]}
   />

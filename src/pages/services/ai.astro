@@ -1,0 +1,261 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'AI Services - Accelerate Your AI Adoption | LeapAI Solutions',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  
+  <Hero
+    tagline="AI Services"
+    title="Accelerate AI Adoption Across Your Business"
+    subtitle="Move beyond experimentation into enterprise-wide AI solutions. Our AI services focus on rapid deployment, seamless integration, and measurable business outcomes without lengthy consulting cycles."
+    actions={[{ variant: 'primary', text: 'Start Your AI Journey', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Implementation and Integration',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Our AI Service Offerings"
+    subtitle="Practical AI solutions that deliver immediate business value and sustainable competitive advantage"
+    items={[
+      {
+        title: 'AI Adoption Acceleration Services',
+        description:
+          'Rapid deployment and scaled integration of AI tools for everyday business processes, enabling businesses to move beyond experimentation into enterprise-wide solutions with measurable outcomes.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'AI Integration Services', 
+        description:
+          'Seamlessly integrate advanced AI tools into existing business systems, connecting pre-built AI solutions to business workflows for immediate efficiency gains and ROI.',
+        icon: 'tabler:plug-connected',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="AI Adoption Acceleration"
+    title="Fast-Track Your AI Implementation"
+    items={[
+      {
+        title: 'Generative AI Solutions',
+        description:
+          'Deploy GPT-based solutions for content generation, document analysis, customer support automation, and intelligent document processing across your business workflows.',
+      },
+      {
+        title: 'Predictive Analytics Systems',
+        description:
+          'Implement forecasting models for demand planning, predictive maintenance, customer churn prediction, and risk assessment with real-time monitoring dashboards.',
+      },
+      {
+        title: 'Automation Systems',
+        description:
+          'Build intelligent automation that combines RPA with AI for document processing, decision support, workflow optimization, and exception handling.',
+      },
+      {
+        title: 'Computer Vision Applications',
+        description:
+          'Deploy vision AI for quality control, inventory management, security monitoring, and automated inspection processes in manufacturing and retail.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Acceleration Services',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Production-Ready AI Solutions</h3>
+      We focus on deploying AI tools that deliver immediate business value, moving you quickly from proof-of-concept to production systems that scale with your business.
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="AI Integration Services"
+    title="Seamless Integration with Existing Systems"
+    items={[
+      {
+        title: 'ERP System Integration',
+        description:
+          'Connect AI capabilities directly into SAP, Oracle, Microsoft Dynamics, and other ERP systems for intelligent forecasting, automated procurement, and optimized operations.',
+      },
+      {
+        title: 'CRM AI Enhancement',
+        description:
+          'Integrate AI into Salesforce, HubSpot, and other CRM platforms for lead scoring, customer sentiment analysis, sales forecasting, and personalized recommendations.',
+      },
+      {
+        title: 'Legacy System Modernization',
+        description:
+          'Add AI capabilities to legacy systems through APIs and microservices, enabling intelligent features without requiring complete system overhauls.',
+      },
+      {
+        title: 'Cloud AI Services',
+        description:
+          'Leverage pre-built AI services from Azure Cognitive Services, Google Cloud AI, and AWS AI/ML to accelerate implementation and reduce development costs.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80',
+      alt: 'AI Integration Architecture',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Avoiding AI Silos</h3>
+      Our integration approach ensures AI capabilities become part of your existing workflows, not separate systems that create data silos or workflow disruptions.
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Our AI Implementation Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Use Case Identification</span>',
+        description:
+          'Identify high-impact AI use cases with clear business value and measurable outcomes. Prioritize based on ROI potential and implementation complexity.',
+        icon: 'tabler:target',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Rapid Prototyping</span>',
+        description:
+          'Build and test AI prototypes using your real data. Validate performance and business impact before committing to full implementation.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">System Integration</span>',
+        description:
+          'Integrate AI capabilities into your existing business systems and workflows. Ensure seamless data flow and user experience.',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Production Deployment</span>',
+        description:
+          'Deploy AI solutions to production with proper monitoring, security, and scalability measures. Include user training and change management.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Optimization & Scale</span>',
+        description:
+          'Monitor performance, optimize models, and expand successful AI applications to other business areas. Continuous improvement and scaling.',
+        icon: 'tabler:chart-line',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Implementation Process',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="AI Technologies & Platforms We Use"
+    subtitle="We leverage the most effective AI technologies and platforms for rapid, reliable implementation"
+    columns={3}
+    items={[
+      {
+        title: 'Generative AI',
+        description: 'OpenAI GPT, Azure OpenAI, Claude, Gemini, LLaMA, Custom fine-tuned models',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Machine Learning',
+        description: 'TensorFlow, PyTorch, Scikit-learn, XGBoost, AutoML solutions',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Cloud AI Services',
+        description: 'Azure Cognitive Services, Google Cloud AI, AWS AI/ML, IBM Watson',
+        icon: 'tabler:cloud-computing',
+      },
+      {
+        title: 'MLOps & Deployment',
+        description: 'MLflow, Kubeflow, Azure ML, SageMaker, Databricks MLflow',
+        icon: 'tabler:settings-automation',
+      },
+      {
+        title: 'Computer Vision',
+        description: 'OpenCV, YOLO, TensorFlow Vision, Azure Computer Vision, Custom models',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'Integration Tools',
+        description: 'REST APIs, GraphQL, Message queues, Event streaming, Microservices',
+        icon: 'tabler:api',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Common AI Use Cases"
+    title="Popular AI Applications We Implement"
+    items={[
+      {
+        title: 'Document Intelligence',
+        description:
+          'Automated invoice processing, contract analysis, form extraction, and document classification with high accuracy and human-in-the-loop validation.',
+      },
+      {
+        title: 'Customer Service AI',
+        description:
+          'Intelligent chatbots, sentiment analysis, automated ticket routing, and knowledge base integration for improved customer support efficiency.',
+      },
+      {
+        title: 'Supply Chain Optimization',
+        description:
+          'Demand forecasting, inventory optimization, supplier risk assessment, and logistics route optimization using predictive analytics.',
+      },
+      {
+        title: 'Financial Intelligence',
+        description:
+          'Fraud detection, credit risk assessment, algorithmic trading, regulatory compliance monitoring, and financial forecasting models.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80',
+      alt: 'AI Use Cases and Applications',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Proven AI Applications</h3>
+      These are some of the most common and successful AI implementations we deploy for our clients across various industries.
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Explore AI Opportunities',
+        href: '/contact',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    title="Ready to Accelerate Your AI Adoption?"
+    subtitle="Let's discuss how our AI services can help you move beyond experimentation to production AI systems that deliver real business value."
+  />
+</Layout>

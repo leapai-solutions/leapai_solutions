@@ -1,0 +1,222 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Data Services - Build Your AI-Ready Foundation | LeapAI Solutions',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  
+  <Hero
+    tagline="Data Services"
+    title="Build the Foundation for AI Success"
+    subtitle="Create unified, scalable, and secure data platforms that support both real-time and batch processing. Our data services ensure you have the robust infrastructure needed for successful AI implementations."
+    actions={[{ variant: 'primary', text: 'Start Your Data Journey', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Data Platform Architecture',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Our Data Service Offerings"
+    subtitle="Comprehensive data solutions designed to create the perfect foundation for your AI initiatives"
+    items={[
+      {
+        title: 'Data Platform Implementation',
+        description:
+          'Build unified, scalable, and secure data platforms leveraging modern lakehouse architectures that support both real-time and batch processing for all your AI use cases.',
+        icon: 'tabler:server-2',
+      },
+      {
+        title: 'Data Architecture & Engineering', 
+        description:
+          'Engineer robust data architectures designed for optimal AI workload performance, governance, and data trust across cloud, hybrid, or on-premises environments.',
+        icon: 'tabler:topology-star-3',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Data Platform Implementation"
+    title="Modern Lakehouse Architecture for AI-Ready Data"
+    items={[
+      {
+        title: 'Unified Data Storage',
+        description:
+          'Implement lakehouse architectures that combine the best of data lakes and warehouses, supporting structured, semi-structured, and unstructured data in one platform.',
+      },
+      {
+        title: 'Real-time & Batch Processing',
+        description:
+          'Build systems that handle both streaming data and batch processing workloads, ensuring your AI models have access to the most current and comprehensive data.',
+      },
+      {
+        title: 'Automated Data Pipelines',
+        description:
+          'Create self-healing, scalable data pipelines with automated quality checks, lineage tracking, and orchestration for reliable data delivery.',
+      },
+      {
+        title: 'Feature Store Implementation',
+        description:
+          'Deploy centralized feature stores that enable data scientists to discover, share, and reuse ML features across projects, accelerating model development.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Data Platform Architecture',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Lakehouse Architecture Benefits</h3>
+      Our modern data platforms combine the flexibility of data lakes with the performance and reliability of data warehouses, creating the perfect foundation for AI workloads.
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="Data Architecture & Engineering"
+    title="Robust Architectures for AI Workload Performance"
+    items={[
+      {
+        title: 'Multi-Cloud & Hybrid Solutions',
+        description:
+          'Design architectures that work across cloud providers (AWS, Azure, GCP) and on-premises infrastructure, ensuring flexibility and avoiding vendor lock-in.',
+      },
+      {
+        title: 'Data Governance & Security',
+        description:
+          'Implement comprehensive data governance frameworks with role-based access controls, encryption, and compliance measures (GDPR, CCPA, HIPAA).',
+      },
+      {
+        title: 'Scalable Computing Resources',
+        description:
+          'Architect systems that automatically scale computing resources based on workload demands, optimizing costs while maintaining performance.',
+      },
+      {
+        title: 'Data Quality & Monitoring',
+        description:
+          'Build automated data quality monitoring with anomaly detection, data profiling, and alerting to ensure high-quality data for AI models.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80',
+      alt: 'Data Architecture Design',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Enterprise-Grade Data Engineering</h3>
+      We build data architectures that not only support your current needs but scale with your business as AI becomes central to your operations.
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Our Data Implementation Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Assessment & Strategy</span>',
+        description:
+          'Comprehensive audit of your current data landscape, identifying sources, quality issues, and integration requirements. Define architectural strategy and roadmap.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Architecture Design</span>',
+        description:
+          'Design optimal data architecture considering performance, scalability, security, and cost requirements. Select appropriate technologies and platforms.',
+        icon: 'tabler:topology-star-3',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Platform Build</span>',
+        description:
+          'Implement the data platform with automated pipelines, quality controls, and monitoring. Include testing and validation at every stage.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Integration & Testing</span>',
+        description:
+          'Connect all data sources, test end-to-end workflows, and validate data quality. Ensure the platform is ready for production AI workloads.',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Training & Handover</span>',
+        description:
+          'Train your team on platform operations, provide comprehensive documentation, and establish ongoing support and monitoring procedures.',
+        icon: 'tabler:school',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Data Implementation Process',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Technologies We Work With"
+    subtitle="We leverage the best modern data technologies to build your platform"
+    columns={3}
+    items={[
+      {
+        title: 'Cloud Platforms',
+        description: 'AWS, Microsoft Azure, Google Cloud Platform, Databricks, Snowflake',
+        icon: 'tabler:cloud',
+      },
+      {
+        title: 'Data Processing',
+        description: 'Apache Spark, Kafka, Airflow, dbt, Delta Lake, Apache Iceberg',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Storage & Databases',
+        description: 'S3, ADLS, BigQuery, PostgreSQL, MongoDB, Elasticsearch',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Data Quality',
+        description: 'Great Expectations, Monte Carlo, DataDog, Custom monitoring solutions',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Orchestration',
+        description: 'Apache Airflow, Prefect, Azure Data Factory, AWS Step Functions',
+        icon: 'tabler:git-branch',
+      },
+      {
+        title: 'Governance',
+        description: 'Apache Atlas, Collibra, Alation, AWS Glue, Azure Purview',
+        icon: 'tabler:shield-lock',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Discuss Your Data Needs',
+        href: '/contact',
+        icon: 'tabler:message-circle',
+      },
+    ]}
+    title="Ready to Build Your Data Foundation?"
+    subtitle="Let's discuss how our data services can create the robust, scalable foundation your AI initiatives need to succeed."
+  />
+</Layout>

@@ -8,7 +8,20 @@ export const headerData = {
     },
     {
       text: 'Services',
-      href: getPermalink('/services'),
+      links: [
+        {
+          text: 'All Services',
+          href: getPermalink('/services'),
+        },
+        {
+          text: 'Data Services',
+          href: getPermalink('/services/data'),
+        },
+        {
+          text: 'AI Services',
+          href: getPermalink('/services/ai'),
+        },
+      ],
     },
     {
       text: 'Blog',
@@ -27,8 +40,9 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'AI Acceleration', href: getPermalink('/services') },
-        { text: 'AI Integration', href: getPermalink('/services') },
+        { text: 'All Services', href: getPermalink('/services') },
+        { text: 'Data Services', href: getPermalink('/services/data') },
+        { text: 'AI Services', href: getPermalink('/services/ai') },
       ],
     },
     {
