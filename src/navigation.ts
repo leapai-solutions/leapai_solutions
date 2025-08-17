@@ -8,18 +8,39 @@ export const headerData = {
     },
     {
       text: 'Services',
-      links: [
+      href: getPermalink('/services'),
+      megaMenu: [
         {
-          text: 'All Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Data Services',
+          title: 'Data Services',
           href: getPermalink('/services/data'),
+          items: [
+            {
+              text: 'Data Platform Implementation',
+              href: getPermalink('/services/data#data-platform'),
+              description: 'Build unified, scalable data platforms with modern lakehouse architectures'
+            },
+            {
+              text: 'Data Architecture & Engineering',
+              href: getPermalink('/services/data#data-architecture'),
+              description: 'Engineer robust data architectures for optimal AI workload performance'
+            },
+          ],
         },
         {
-          text: 'AI Services',
+          title: 'AI Services',
           href: getPermalink('/services/ai'),
+          items: [
+            {
+              text: 'AI Adoption Acceleration Services',
+              href: getPermalink('/services/ai#ai-adoption'),
+              description: 'Rapid deployment and scaled integration of AI tools for business processes'
+            },
+            {
+              text: 'AI Integration Services',
+              href: getPermalink('/services/ai#ai-integration'),
+              description: 'Seamlessly integrate AI tools into existing business systems'
+            },
+          ],
         },
       ],
     },
@@ -40,7 +61,6 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'All Services', href: getPermalink('/services') },
         { text: 'Data Services', href: getPermalink('/services/data') },
         { text: 'AI Services', href: getPermalink('/services/ai') },
       ],
