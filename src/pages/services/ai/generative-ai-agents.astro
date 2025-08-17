@@ -1,0 +1,292 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Generative AI & Agents Services - Build Intelligent Copilots | LeapAI Solutions',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  
+  <Hero
+    tagline="Generative AI & Agents Services"
+    title="Give Every Employee Their Own AI Expert"
+    subtitle="Stop losing expertise when employees leave. Deploy intelligent AI assistants that capture institutional knowledge, reason through complex problems, and provide expert-level guidance 24/7. Transform your workplace into an AI-enhanced environment."
+    actions={[{ variant: 'primary', text: 'Deploy Your AI Workforce', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Generative AI and Autonomous Agents',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Generative AI & Agents Services"
+    title="Intelligent Assistants That Think, Learn, and Act"
+    items={[
+      {
+        title: 'Intelligent Document Copilots',
+        description:
+          'AI assistants that understand, analyze, and generate complex documents, contracts, reports, and proposals with human-like reasoning and context awareness.',
+        icon: 'tabler:file-text',
+      },
+      {
+        title: 'Customer Service Agents',
+        description:
+          'Autonomous agents that handle customer inquiries, troubleshoot issues, process requests, and escalate complex cases with full conversation context.',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Research & Analysis Assistants',
+        description:
+          'AI agents that research markets, analyze data, synthesize insights, and generate actionable recommendations from multiple information sources.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Process Automation Agents',
+        description:
+          'Autonomous agents that execute complex business processes, make intelligent decisions, and coordinate across multiple systems and workflows.',
+        icon: 'tabler:robot',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Agents and Copilots',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Solve the Knowledge Problem</h3>
+      Stop losing critical expertise when experienced employees retire or leave. Our AI agents capture institutional knowledge and provide expert-level guidance that's available to your entire team, 24/7.
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="AI Agent Capabilities"
+    subtitle="Advanced AI agents with reasoning, memory, and autonomous action capabilities"
+    columns={2}
+    items={[
+      {
+        title: 'Generative AI Solutions',
+        description: 'Custom GPT applications, document generation, content creation, code generation, and intelligent writing assistants.',
+        icon: 'tabler:sparkles',
+      },
+      {
+        title: 'Autonomous Task Execution',
+        description: 'Agents that can plan, execute, and monitor complex multi-step tasks across different systems and workflows.',
+        icon: 'tabler:checklist',
+      },
+      {
+        title: 'Contextual Memory',
+        description: 'AI agents with persistent memory that learn from interactions and maintain context across conversations and sessions.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Multi-Modal Capabilities',
+        description: 'Agents that work with text, images, documents, audio, and video for comprehensive business communication.',
+        icon: 'tabler:photo',
+      },
+      {
+        title: 'Real-time Reasoning',
+        description: 'Advanced reasoning capabilities that analyze situations, consider options, and make intelligent recommendations.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'System Integration',
+        description: 'Agents that can access and operate multiple business systems, databases, and APIs to complete tasks autonomously.',
+        icon: 'tabler:plug-connected',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="Popular Agent Applications"
+    title="Transformative AI Agents We Build"
+    items={[
+      {
+        title: 'Executive AI Assistant',
+        description:
+          'Comprehensive AI assistant that manages schedules, prepares briefings, analyzes reports, and handles executive-level communication and decision support.',
+        icon: 'tabler:user-star',
+      },
+      {
+        title: 'Sales Intelligence Agent',
+        description:
+          'AI agent that researches prospects, writes personalized outreach, qualifies leads, and updates CRM systems with intelligent sales insights.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Legal Document Assistant',
+        description:
+          'Specialized agent for contract analysis, legal research, document drafting, and compliance checking with legal reasoning capabilities.',
+        icon: 'tabler:gavel',
+      },
+      {
+        title: 'Financial Analysis Copilot',
+        description:
+          'AI assistant that analyzes financial data, generates reports, identifies trends, and provides investment and business intelligence insights.',
+        icon: 'tabler:calculator',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80',
+      alt: 'AI Agent Applications',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Industry-Specific Intelligence</h3>
+      We build AI agents with deep domain knowledge that understand industry-specific workflows, terminology, and business logic.
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Our AI Agent Development Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Use Case Definition</span>',
+        description:
+          'Define specific agent capabilities, workflows, and success criteria. Map out user interactions and autonomous task requirements.',
+        icon: 'tabler:target',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Agent Architecture</span>',
+        description:
+          'Design agent architecture including reasoning engines, memory systems, knowledge bases, and integration points with business systems.',
+        icon: 'tabler:layout',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Training & Fine-tuning</span>',
+        description:
+          'Train agents on domain-specific data, fine-tune reasoning capabilities, and develop specialized knowledge for your business context.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Testing & Validation</span>',
+        description:
+          'Comprehensive testing of agent capabilities, safety measures, and performance validation in controlled business scenarios.',
+        icon: 'tabler:test-pipe',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Deployment & Monitoring</span>',
+        description:
+          'Deploy agents to production with monitoring, feedback loops, and continuous learning capabilities for ongoing improvement.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Agent Development Process',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Technologies & Platforms We Use"
+    subtitle="Cutting-edge AI technologies for building sophisticated agents and copilots"
+    columns={3}
+    items={[
+      {
+        title: 'Large Language Models',
+        description: 'OpenAI GPT-4, Claude, Gemini, Custom fine-tuned models, Multi-modal models',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Agent Frameworks',
+        description: 'LangChain, AutoGen, CrewAI, Custom agent architectures, Multi-agent systems',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Vector Databases',
+        description: 'Pinecone, Weaviate, Chroma, Custom knowledge bases, Semantic search',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Memory Systems',
+        description: 'Conversation memory, Long-term memory, Knowledge graphs, Context management',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Integration APIs',
+        description: 'REST APIs, GraphQL, Webhooks, Business system connectors, Custom integrations',
+        icon: 'tabler:api',
+      },
+      {
+        title: 'Deployment Platforms',
+        description: 'Cloud deployment, Container orchestration, Serverless functions, Edge computing',
+        icon: 'tabler:cloud-computing',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Enterprise AI Workforce"
+    title="Scale Your Expertise Without Scaling Headcount"
+    items={[
+      {
+        title: 'Instant Knowledge Access',
+        description:
+          'Every employee gets access to your organization\'s best practices, policies, and expertise instantly. No more waiting for the right person to be available.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Consistent Service Quality',
+        description:
+          'AI agents deliver the same high-quality responses and decisions every time, eliminating variability and ensuring consistent customer experiences.',
+        icon: 'tabler:medal',
+      },
+      {
+        title: 'Handle Growth Without Hiring',
+        description:
+          'Scale your business operations to handle increased demand without the time and cost of recruiting, hiring, and training additional staff.',
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Secure & Compliant',
+        description:
+          'Built-in security controls, audit trails, and compliance frameworks ensure your AI agents meet enterprise standards and regulatory requirements.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80',
+      alt: 'Enterprise AI Workforce',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Transform Workforce Productivity</h3>
+      Deploy an AI workforce that captures your best practices and makes them available to everyone, creating a more capable and consistent organization.
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Build Your AI Agent',
+        href: '/contact',
+        icon: 'tabler:robot',
+      },
+    ]}
+    title="Ready to Deploy Intelligent AI Assistants?"
+    subtitle="Let's discuss how our generative AI and agent services can transform your business operations with intelligent copilots and autonomous assistants."
+  />
+</Layout>

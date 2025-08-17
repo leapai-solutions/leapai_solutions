@@ -1,0 +1,292 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'AI Integration Services - Embed AI Into Business Workflows | LeapAI Solutions',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  
+  <Hero
+    tagline="AI Integration Services"
+    title="Turn Manual Processes Into Intelligent Workflows"
+    subtitle="Stop doing manually what AI can handle automatically. We embed AI directly into your existing business systems - ERP, CRM, document management - eliminating bottlenecks and human error without disrupting operations."
+    actions={[{ variant: 'primary', text: 'Automate Your Workflows', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80',
+      alt: 'AI Integration Architecture',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="AI Integration Services"
+    title="Transform Existing Workflows with Intelligent Automation"
+    items={[
+      {
+        title: 'ERP & CRM Integration',
+        description:
+          'Embed AI capabilities directly into SAP, Oracle, Salesforce, HubSpot, and other business systems for intelligent forecasting, lead scoring, and automated decision-making.',
+        icon: 'tabler:building-bank',
+      },
+      {
+        title: 'Document Processing Integration',
+        description:
+          'Integrate AI document intelligence into existing workflows for automated invoice processing, contract analysis, form extraction, and compliance monitoring.',
+        icon: 'tabler:file-text',
+      },
+      {
+        title: 'Workflow Automation',
+        description:
+          'Add AI decision-making to business processes, automate repetitive tasks, and create intelligent routing and approval workflows that learn and adapt.',
+        icon: 'tabler:git-branch',
+      },
+      {
+        title: 'API-First Integration',
+        description:
+          'Build robust API connections that seamlessly integrate AI capabilities into existing applications without requiring system overhauls or data migration.',
+        icon: 'tabler:api',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Integration Solutions',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Stop the Productivity Drain</h3>
+      Eliminate the manual tasks that consume your team's time and energy. Our AI integration transforms time-intensive processes into automated workflows that never sleep, make mistakes, or take sick days.
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Integration Capabilities"
+    subtitle="Comprehensive AI integration services that work with your existing technology stack"
+    columns={2}
+    items={[
+      {
+        title: 'Business System Integration',
+        description: 'ERP, CRM, HRM, and legacy system AI enhancement without disrupting existing operations or data flows.',
+        icon: 'tabler:building-warehouse',
+      },
+      {
+        title: 'Real-time Data Processing',
+        description: 'Live AI analysis and decision-making integrated into operational systems for immediate insights and automated responses.',
+        icon: 'tabler:clock-play',
+      },
+      {
+        title: 'Cloud Service Integration',
+        description: 'Leverage Azure Cognitive Services, Google Cloud AI, AWS AI/ML services integrated into your existing cloud infrastructure.',
+        icon: 'tabler:cloud-computing',
+      },
+      {
+        title: 'Custom AI Model Deployment',
+        description: 'Deploy and integrate custom-trained models specific to your business needs and data characteristics.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Legacy System Modernization',
+        description: 'Add modern AI capabilities to legacy systems through microservices and API integration without complete rewrites.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Security & Compliance',
+        description: 'Maintain existing security protocols and compliance requirements while adding AI capabilities to sensitive business processes.',
+        icon: 'tabler:shield-lock',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="Common Integration Use Cases"
+    title="Popular AI Integrations We Implement"
+    items={[
+      {
+        title: 'Intelligent Document Processing',
+        description:
+          'Automate invoice processing, contract analysis, and form extraction directly within existing document management and ERP systems.',
+        icon: 'tabler:file-analytics',
+      },
+      {
+        title: 'Predictive Analytics Integration',
+        description:
+          'Embed demand forecasting, inventory optimization, and risk assessment directly into planning and decision-making systems.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Customer Intelligence',
+        description:
+          'Integrate sentiment analysis, lead scoring, and churn prediction into CRM and customer service platforms for real-time insights.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Quality Control Automation',
+        description:
+          'Computer vision quality control integrated into manufacturing and inspection systems for automated defect detection and reporting.',
+        icon: 'tabler:eye-check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80',
+      alt: 'AI Integration Use Cases',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Proven Integration Patterns</h3>
+      These are the most successful AI integrations we deploy, delivering immediate business value within existing operational frameworks.
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Our AI Integration Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">System Assessment</span>',
+        description:
+          'Analyze existing systems, data flows, and integration points. Identify optimal AI integration opportunities with minimal disruption.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Integration Design</span>',
+        description:
+          'Design AI integration architecture that works with existing systems, maintaining security, performance, and operational requirements.',
+        icon: 'tabler:layout',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Pilot Implementation</span>',
+        description:
+          'Build and test AI integration in controlled environment, validating performance and business impact before full deployment.',
+        icon: 'tabler:test-pipe',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Production Deployment</span>',
+        description:
+          'Deploy AI capabilities to production systems with monitoring, rollback procedures, and gradual rollout to minimize risk.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Optimization & Scale</span>',
+        description:
+          'Monitor performance, optimize AI models, and scale successful integrations to additional business processes and systems.',
+        icon: 'tabler:chart-line',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Integration Process',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Integration Technologies We Use"
+    subtitle="Modern integration technologies that ensure reliable, scalable AI deployments"
+    columns={3}
+    items={[
+      {
+        title: 'API Integration',
+        description: 'REST APIs, GraphQL, Webhooks, Message queues for reliable system communication',
+        icon: 'tabler:api',
+      },
+      {
+        title: 'Cloud AI Services',
+        description: 'Azure Cognitive Services, Google Cloud AI, AWS AI/ML, IBM Watson integration',
+        icon: 'tabler:cloud-computing',
+      },
+      {
+        title: 'Custom AI Models',
+        description: 'TensorFlow Serving, PyTorch, MLflow, Custom model deployment and serving',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Integration Platforms',
+        description: 'Zapier, Microsoft Power Automate, MuleSoft, Custom middleware solutions',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'Monitoring & Observability',
+        description: 'Application monitoring, model performance tracking, Business impact measurement',
+        icon: 'tabler:chart-dots',
+      },
+      {
+        title: 'Security & Compliance',
+        description: 'API security, Data encryption, Audit trails, Compliance frameworks',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Enterprise-Ready AI Integration"
+    title="Built for Business-Critical Operations"
+    items={[
+      {
+        title: 'Zero Downtime Implementation',
+        description:
+          'AI capabilities are added alongside existing systems, not replacing them. Your business operations continue uninterrupted during implementation.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Enterprise Security & Compliance',
+        description:
+          'Built-in data encryption, audit trails, and compliance frameworks. Your sensitive business data stays protected and meets regulatory requirements.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Human Oversight & Control',
+        description:
+          'AI makes recommendations and automates routine tasks, but humans retain final decision authority on critical business processes.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Gradual Rollout & Monitoring',
+        description:
+          'Start small with pilot workflows, measure results, then expand successful AI implementations across your entire organization.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80',
+      alt: 'Enterprise AI Integration',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Modernize Without Risk</h3>
+      Transform your workplace with AI while maintaining the security, compliance, and operational reliability your business depends on.
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start AI Integration',
+        href: '/contact',
+        icon: 'tabler:plug-connected',
+      },
+    ]}
+    title="Ready to Integrate AI Into Your Workflows?"
+    subtitle="Let's discuss how our AI integration services can add intelligent automation to your existing business processes without disrupting operations."
+  />
+</Layout>

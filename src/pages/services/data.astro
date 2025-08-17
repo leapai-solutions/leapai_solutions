@@ -29,19 +29,32 @@ const metadata = {
 
   <Features2
     title="Our Data Service Offerings"
-    subtitle="Comprehensive data solutions designed to create the perfect foundation for your AI initiatives"
+    subtitle="Complete data solutions that transform your raw data into AI-ready business assets through modern platforms and integration pipelines"
+    columns={2}
     items={[
       {
-        title: 'Data Platform Implementation',
+        title: 'Data Platform Services',
         description:
-          'Build unified, scalable, and secure data platforms leveraging modern lakehouse architectures that support both real-time and batch processing for all your AI use cases.',
+          'Design & implement modern cloud data platforms ready for AI and analytics. Includes lakehouse architecture, governance, security, and cost optimization.',
         icon: 'tabler:server-2',
+        href: '/services/data/data-platform',
+        callToAction: {
+          target: '_self',
+          text: 'Learn More',
+          href: '/services/data/data-platform',
+        },
       },
       {
-        title: 'Data Architecture & Engineering', 
+        title: 'Data Integration Services', 
         description:
-          'Engineer robust data architectures designed for optimal AI workload performance, governance, and data trust across cloud, hybrid, or on-premises environments.',
-        icon: 'tabler:topology-star-3',
+          'Design & implement ETL/ELT pipelines that turn raw, siloed data into usable business assets. Includes real-time ingestion, automation, and quality controls.',
+        icon: 'tabler:git-branch',
+        href: '/services/data/data-integration',
+        callToAction: {
+          target: '_self',
+          text: 'Learn More',
+          href: '/services/data/data-integration',
+        },
       },
     ]}
   />
@@ -49,79 +62,43 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-    id="data-platform"
     isReversed
-    tagline="Data Platform Implementation"
-    title="Modern Lakehouse Architecture for AI-Ready Data"
+    tagline="Why Our Data Services"
+    title="Built for AI Success from Day One"
     items={[
       {
-        title: 'Unified Data Storage',
+        title: 'AI-Optimized Architecture',
         description:
-          'Implement lakehouse architectures that combine the best of data lakes and warehouses, supporting structured, semi-structured, and unstructured data in one platform.',
+          'Every data solution is designed specifically to support AI and machine learning workloads, ensuring optimal performance for your AI initiatives.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Real-time & Batch Processing',
+        title: 'Future-Proof Foundation',
         description:
-          'Build systems that handle both streaming data and batch processing workloads, ensuring your AI models have access to the most current and comprehensive data.',
+          'Built on modern cloud-native technologies that scale with your business and adapt to evolving AI requirements and new use cases.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Automated Data Pipelines',
+        title: 'Enterprise Security',
         description:
-          'Create self-healing, scalable data pipelines with automated quality checks, lineage tracking, and orchestration for reliable data delivery.',
+          'Comprehensive security and governance frameworks built from day one, ensuring compliance and data protection across all services.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Feature Store Implementation',
+        title: 'Rapid Implementation',
         description:
-          'Deploy centralized feature stores that enable data scientists to discover, share, and reuse ML features across projects, accelerating model development.',
+          'Get your data infrastructure operational quickly with our proven methodologies and pre-built components, reducing time to value.',
+        icon: 'tabler:rocket',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Data Platform Architecture',
+      alt: 'Data Services Benefits',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Lakehouse Architecture Benefits</h3>
-      Our modern data platforms combine the flexibility of data lakes with the performance and reliability of data warehouses, creating the perfect foundation for AI workloads.
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    id="data-architecture"
-    tagline="Data Architecture & Engineering"
-    title="Robust Architectures for AI Workload Performance"
-    items={[
-      {
-        title: 'Multi-Cloud & Hybrid Solutions',
-        description:
-          'Design architectures that work across cloud providers (AWS, Azure, GCP) and on-premises infrastructure, ensuring flexibility and avoiding vendor lock-in.',
-      },
-      {
-        title: 'Data Governance & Security',
-        description:
-          'Implement comprehensive data governance frameworks with role-based access controls, encryption, and compliance measures (GDPR, CCPA, HIPAA).',
-      },
-      {
-        title: 'Scalable Computing Resources',
-        description:
-          'Architect systems that automatically scale computing resources based on workload demands, optimizing costs while maintaining performance.',
-      },
-      {
-        title: 'Data Quality & Monitoring',
-        description:
-          'Build automated data quality monitoring with anomaly detection, data profiling, and alerting to ensure high-quality data for AI models.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80',
-      alt: 'Data Architecture Design',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Enterprise-Grade Data Engineering</h3>
-      We build data architectures that not only support your current needs but scale with your business as AI becomes central to your operations.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Complete Data Solutions</h3>
+      From platform implementation to architecture design and pipeline engineering, we provide end-to-end data solutions that work together seamlessly.
     </Fragment>
   </Content>
 
