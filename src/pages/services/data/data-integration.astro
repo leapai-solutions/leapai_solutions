@@ -1,0 +1,288 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Data Integration Services - Design & Implement ETL/ELT Pipelines | LeapAI Solutions',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  
+  <Hero
+    tagline="Data Integration Services"
+    title="Turn Raw Data Into Business Assets"
+    subtitle="Design & implement ETL/ELT pipelines that transform siloed, raw data into reliable, usable business assets. Includes real-time ingestion, automated workflows, and quality controls that deliver trusted data for AI and analytics."
+    actions={[{ variant: 'primary', text: 'Build Your Data Pipelines', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80',
+      alt: 'Data Integration Pipelines',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Data Integration Services"
+    title="End-to-End Data Pipeline Solutions"
+    items={[
+      {
+        title: 'ETL/ELT Pipeline Development',
+        description:
+          'Build robust Extract, Transform, Load pipelines that handle data ingestion, transformation, and loading with fault tolerance and monitoring.',
+        icon: 'tabler:git-branch',
+      },
+      {
+        title: 'Real-time Data Processing',
+        description:
+          'Develop streaming data pipelines for real-time analytics, event processing, and immediate data availability for AI applications.',
+        icon: 'tabler:clock-play',
+      },
+      {
+        title: 'Data Quality Engineering',
+        description:
+          'Implement automated data validation, quality checks, anomaly detection, and data cleansing processes throughout the pipeline.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Workflow Orchestration',
+        description:
+          'Design and implement complex workflow orchestration with dependency management, scheduling, and error handling capabilities.',
+        icon: 'tabler:sitemap',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Data Pipeline Architecture',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Production-Grade Engineering</h3>
+      Our data engineering solutions are built for production environments with enterprise-grade reliability, monitoring, and scalability.
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Data Engineering Capabilities"
+    subtitle="Comprehensive data engineering services for modern data operations"
+    columns={2}
+    items={[
+      {
+        title: 'Batch Processing Pipelines',
+        description: 'Scalable batch processing for large-scale data transformations, aggregations, and complex analytical workloads.',
+        icon: 'tabler:database-export',
+      },
+      {
+        title: 'Stream Processing',
+        description: 'Real-time data processing with Apache Kafka, Apache Flink, and cloud-native streaming services.',
+        icon: 'tabler:wave-square',
+      },
+      {
+        title: 'Data Transformation',
+        description: 'Complex data transformations, joins, aggregations, and feature engineering for AI and analytics use cases.',
+        icon: 'tabler:transform',
+      },
+      {
+        title: 'Pipeline Monitoring',
+        description: 'Comprehensive monitoring, alerting, and observability for data pipeline health and performance.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Data Lineage Tracking',
+        description: 'Automated data lineage tracking to understand data flow, transformations, and dependencies.',
+        icon: 'tabler:route',
+      },
+      {
+        title: 'Error Handling & Recovery',
+        description: 'Robust error handling, retry mechanisms, and automated recovery procedures for pipeline reliability.',
+        icon: 'tabler:refresh-alert',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="Data Quality Engineering"
+    title="Ensuring High-Quality Data for AI"
+    items={[
+      {
+        title: 'Automated Validation',
+        description:
+          'Implement automated data validation rules, schema checks, and business rule validation throughout the pipeline.',
+        icon: 'tabler:checklist',
+      },
+      {
+        title: 'Anomaly Detection',
+        description:
+          'Deploy ML-based anomaly detection to identify data quality issues, outliers, and unexpected changes in data patterns.',
+        icon: 'tabler:radar',
+      },
+      {
+        title: 'Data Profiling',
+        description:
+          'Continuous data profiling to understand data characteristics, distributions, and quality metrics over time.',
+        icon: 'tabler:chart-dots',
+      },
+      {
+        title: 'Quality Reporting',
+        description:
+          'Comprehensive quality reporting and dashboards to track data quality KPIs and identify improvement opportunities.',
+        icon: 'tabler:report',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Data Quality Engineering',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Quality-First Approach</h3>
+      We build quality checks and validation into every step of the data pipeline, ensuring your AI models receive clean, reliable data.
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Our Data Engineering Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Requirements Analysis</span>',
+        description:
+          'Analyze data sources, transformation requirements, performance needs, and quality standards. Define pipeline specifications.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Pipeline Design</span>',
+        description:
+          'Design data flow architecture, select appropriate technologies, and plan transformation logic and error handling strategies.',
+        icon: 'tabler:layout',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Development & Testing</span>',
+        description:
+          'Develop pipelines with comprehensive testing, including unit tests, integration tests, and data quality validation.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Deployment & Monitoring</span>',
+        description:
+          'Deploy to production with monitoring, alerting, and observability. Implement CI/CD for continuous delivery.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Optimization & Maintenance</span>',
+        description:
+          'Continuous optimization for performance, cost, and reliability. Ongoing maintenance and feature enhancements.',
+        icon: 'tabler:settings',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Data Engineering Process',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Technologies & Tools We Use"
+    subtitle="Modern data engineering tools and frameworks for reliable, scalable pipelines"
+    columns={3}
+    items={[
+      {
+        title: 'Processing Frameworks',
+        description: 'Apache Spark, Apache Flink, Apache Beam, Pandas, Dask',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Orchestration Tools',
+        description: 'Apache Airflow, Prefect, Azure Data Factory, AWS Step Functions',
+        icon: 'tabler:git-branch',
+      },
+      {
+        title: 'Streaming Platforms',
+        description: 'Apache Kafka, Apache Pulsar, Amazon Kinesis, Google Pub/Sub',
+        icon: 'tabler:wave-square',
+      },
+      {
+        title: 'Transformation Tools',
+        description: 'dbt, Apache Spark SQL, Databricks, Custom Python/Scala',
+        icon: 'tabler:transform',
+      },
+      {
+        title: 'Quality Tools',
+        description: 'Great Expectations, Apache Griffin, Deequ, Custom validators',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Monitoring & Observability',
+        description: 'DataDog, Grafana, Prometheus, CloudWatch, Custom dashboards',
+        icon: 'tabler:chart-line',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Engineering Benefits"
+    title="Why Our Data Engineering Delivers Results"
+    items={[
+      {
+        title: 'Reliable Data Delivery',
+        description:
+          'Fault-tolerant pipelines with automated error handling ensure consistent, reliable data delivery for your AI applications.',
+      },
+      {
+        title: 'Scalable Performance',
+        description:
+          'Pipelines designed to scale horizontally and handle growing data volumes without performance degradation.',
+      },
+      {
+        title: 'Cost Efficiency',
+        description:
+          'Optimized resource usage and intelligent scheduling reduce compute costs while maintaining performance.',
+      },
+      {
+        title: 'Operational Excellence',
+        description:
+          'Comprehensive monitoring, alerting, and automation reduce operational overhead and enable proactive issue resolution.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80',
+      alt: 'Engineering Benefits',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Engineering Excellence</h3>
+      Our data engineering practices follow software engineering best practices with version control, testing, and CI/CD for reliable, maintainable pipelines.
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Your Data Engineering',
+        href: '/contact',
+        icon: 'tabler:tools',
+      },
+    ]}
+    title="Ready to Build Robust Data Pipelines?"
+    subtitle="Let's discuss how our data engineering services can transform your raw data into reliable, AI-ready assets through robust pipeline development."
+  />
+</Layout>

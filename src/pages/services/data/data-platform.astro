@@ -1,0 +1,245 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Data Platform Services - Design & Implement AI-Ready Platforms | LeapAI Solutions',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  
+  <Hero
+    tagline="Data Platform Services"
+    title="Design & Implement Modern Data Platforms"
+    subtitle="Complete data platform solutions ready for AI and analytics. We design and implement scalable, secure cloud platforms with modern lakehouse architectures, governance frameworks, and cost optimization."
+    actions={[{ variant: 'primary', text: 'Start Your Platform Project', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Data Platform Architecture',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Platform Implementation Services"
+    title="Modern Lakehouse Architecture for AI Workloads"
+    items={[
+      {
+        title: 'Unified Data Storage',
+        description:
+          'Implement lakehouse architectures that combine the best of data lakes and warehouses, supporting structured, semi-structured, and unstructured data in one platform.',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Real-time & Batch Processing',
+        description:
+          'Build systems that handle both streaming data and batch processing workloads, ensuring your AI models have access to the most current and comprehensive data.',
+        icon: 'tabler:clock-play',
+      },
+      {
+        title: 'Automated Data Pipelines',
+        description:
+          'Create self-healing, scalable data pipelines with automated quality checks, lineage tracking, and orchestration for reliable data delivery.',
+        icon: 'tabler:git-branch',
+      },
+      {
+        title: 'Feature Store Implementation',
+        description:
+          'Deploy centralized feature stores that enable data scientists to discover, share, and reuse ML features across projects, accelerating model development.',
+        icon: 'tabler:components',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Data Platform Architecture',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Lakehouse Architecture Benefits</h3>
+      Our modern data platforms combine the flexibility of data lakes with the performance and reliability of data warehouses, creating the perfect foundation for AI workloads.
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Platform Components We Implement"
+    subtitle="Complete end-to-end platform capabilities designed for AI and analytics workloads"
+    columns={2}
+    items={[
+      {
+        title: 'Data Ingestion Layer',
+        description: 'Real-time streaming ingestion, batch data loading, API connectors, and change data capture (CDC) from various sources.',
+        icon: 'tabler:download',
+      },
+      {
+        title: 'Storage & Compute',
+        description: 'Scalable cloud storage with optimized compute engines, auto-scaling capabilities, and cost-effective resource management.',
+        icon: 'tabler:server-2',
+      },
+      {
+        title: 'Data Processing Engine',
+        description: 'Distributed processing frameworks for ETL/ELT operations, real-time analytics, and machine learning workloads.',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Metadata Management',
+        description: 'Comprehensive data catalog, lineage tracking, schema evolution, and automated data discovery capabilities.',
+        icon: 'tabler:file-database',
+      },
+      {
+        title: 'Security & Governance',
+        description: 'Role-based access controls, data encryption, audit logging, and compliance frameworks (GDPR, CCPA, HIPAA).',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Monitoring & Observability',
+        description: 'Real-time monitoring, performance optimization, data quality monitoring, and automated alerting systems.',
+        icon: 'tabler:eye',
+      },
+    ]}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Our Platform Implementation Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Assessment & Planning</span>',
+        description:
+          'Comprehensive audit of current data landscape, requirements gathering, and technology selection. Define platform architecture and implementation roadmap.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Infrastructure Setup</span>',
+        description:
+          'Provision cloud infrastructure, set up security frameworks, and establish networking and connectivity. Configure baseline platform services.',
+        icon: 'tabler:server',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Core Platform Build</span>',
+        description:
+          'Implement data ingestion, storage, and processing layers. Deploy metadata management, security controls, and monitoring systems.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Integration & Testing</span>',
+        description:
+          'Connect data sources, implement data pipelines, and conduct comprehensive testing. Validate performance, security, and data quality.',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Deployment & Training</span>',
+        description:
+          'Deploy to production, train your team on platform operations, and establish ongoing support and maintenance procedures.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Platform Implementation Process',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Technologies & Platforms We Use"
+    subtitle="We leverage the best modern data technologies to build your platform"
+    columns={3}
+    items={[
+      {
+        title: 'Cloud Platforms',
+        description: 'AWS, Microsoft Azure, Google Cloud Platform, Multi-cloud architectures',
+        icon: 'tabler:cloud',
+      },
+      {
+        title: 'Data Platforms',
+        description: 'Databricks, Snowflake, Delta Lake, Apache Iceberg, Apache Hudi',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Processing Engines',
+        description: 'Apache Spark, Apache Kafka, Apache Flink, dbt, Apache Airflow',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Storage Solutions',
+        description: 'S3, ADLS, Google Cloud Storage, HDFS, Object storage optimizations',
+        icon: 'tabler:archive',
+      },
+      {
+        title: 'Orchestration',
+        description: 'Apache Airflow, Prefect, Azure Data Factory, AWS Step Functions',
+        icon: 'tabler:git-branch',
+      },
+      {
+        title: 'Monitoring',
+        description: 'DataDog, New Relic, Grafana, CloudWatch, Custom monitoring solutions',
+        icon: 'tabler:chart-line',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="Platform Benefits"
+    title="Why Our Data Platform Implementations Succeed"
+    items={[
+      {
+        title: 'Rapid Time-to-Value',
+        description:
+          'Get your data platform operational in 6-12 weeks with our proven implementation methodology and pre-built components.',
+      },
+      {
+        title: 'Future-Proof Architecture',
+        description:
+          'Built on modern cloud-native technologies that scale with your business and adapt to evolving AI requirements.',
+      },
+      {
+        title: 'Cost Optimization',
+        description:
+          'Intelligent resource management and auto-scaling capabilities that optimize costs while maintaining performance.',
+      },
+      {
+        title: 'Enterprise Security',
+        description:
+          'Comprehensive security framework with encryption, access controls, and compliance features built from day one.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80',
+      alt: 'Platform Benefits',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Built for AI Success</h3>
+      Our data platforms are specifically designed to support AI workloads, from data preprocessing to model training and inference at scale.
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Discuss Your Platform Needs',
+        href: '/contact',
+        icon: 'tabler:message-circle',
+      },
+    ]}
+    title="Ready to Build Your Data Platform?"
+    subtitle="Let's discuss how our platform implementation services can create the robust, scalable foundation your AI initiatives need to succeed."
+  />
+</Layout>

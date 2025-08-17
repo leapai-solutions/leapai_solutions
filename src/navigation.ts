@@ -15,14 +15,14 @@ export const headerData = {
           href: getPermalink('/services/data'),
           items: [
             {
-              text: 'Data Platform Implementation',
-              href: getPermalink('/services/data#data-platform'),
-              description: 'Build unified, scalable data platforms with modern lakehouse architectures'
+              text: 'Data Platform Services',
+              href: getPermalink('/services/data/data-platform'),
+              description: 'Design & implement modern cloud data platforms ready for AI and analytics'
             },
             {
-              text: 'Data Architecture & Engineering',
-              href: getPermalink('/services/data#data-architecture'),
-              description: 'Engineer robust data architectures for optimal AI workload performance'
+              text: 'Data Integration Services',
+              href: getPermalink('/services/data/data-integration'),
+              description: 'Design & implement ETL/ELT pipelines that turn raw data into business assets'
             },
           ],
         },
@@ -61,8 +61,8 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'Data Services', href: getPermalink('/services/data') },
-        { text: 'AI Services', href: getPermalink('/services/ai') },
+        { text: 'Data Platform Services', href: getPermalink('/services/data/data-platform') },
+        { text: 'AI Adoption Acceleration', href: getPermalink('/services/ai#ai-adoption') },
       ],
     },
     {
