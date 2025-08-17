@@ -16,9 +16,9 @@ const metadata = {
   
   <Hero
     tagline="AI Services"
-    title="Accelerate AI Adoption Across Your Business"
-    subtitle="Move beyond experimentation into enterprise-wide AI solutions. Our AI services focus on rapid deployment, seamless integration, and measurable business outcomes without lengthy consulting cycles."
-    actions={[{ variant: 'primary', text: 'Start Your AI Journey', href: '/contact' }]}
+    title="Transform Business with Intelligent Automation"
+    subtitle="From embedding AI into existing workflows to building next-generation copilots and autonomous agents. Our AI services deliver practical automation and intelligent assistance that transforms how your business operates."
+    actions={[{ variant: 'primary', text: 'Start Your AI Transformation', href: '/contact' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       alt: 'AI Implementation and Integration',
@@ -29,19 +29,32 @@ const metadata = {
 
   <Features2
     title="Our AI Service Offerings"
-    subtitle="Practical AI solutions that deliver immediate business value and sustainable competitive advantage"
+    subtitle="Transform your business with practical AI solutions that embed intelligence into workflows and deliver autonomous assistance"
+    columns={2}
     items={[
       {
-        title: 'AI Adoption Acceleration Services',
+        title: 'AI Integration Services',
         description:
-          'Rapid deployment and scaled integration of AI tools for everyday business processes, enabling businesses to move beyond experimentation into enterprise-wide solutions with measurable outcomes.',
-        icon: 'tabler:rocket',
+          'Embed AI models into business processes and systems for practical, production-ready automation. Transform existing workflows with efficiency, insights, and intelligent decision-making.',
+        icon: 'tabler:plug-connected',
+        href: '/services/ai/ai-integration',
+        callToAction: {
+          target: '_self',
+          text: 'Learn More',
+          href: '/services/ai/ai-integration',
+        },
       },
       {
-        title: 'AI Integration Services', 
+        title: 'Generative AI & Agents Services', 
         description:
-          'Seamlessly integrate advanced AI tools into existing business systems, connecting pre-built AI solutions to business workflows for immediate efficiency gains and ROI.',
-        icon: 'tabler:plug-connected',
+          'Build intelligent copilots and autonomous AI assistants that reason, recommend, and act. Next-generation AI that transforms how staff interact with information and systems.',
+        icon: 'tabler:robot',
+        href: '/services/ai/generative-ai-agents',
+        callToAction: {
+          target: '_self',
+          text: 'Learn More',
+          href: '/services/ai/generative-ai-agents',
+        },
       },
     ]}
   />
