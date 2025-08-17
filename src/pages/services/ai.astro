@@ -16,9 +16,9 @@ const metadata = {
   
   <Hero
     tagline="AI Services"
-    title="Transform Business with Intelligent Automation"
-    subtitle="From embedding AI into existing workflows to building next-generation copilots and autonomous agents. Our AI services deliver practical automation and intelligent assistance that transforms how your business operates."
-    actions={[{ variant: 'primary', text: 'Start Your AI Transformation', href: '/contact' }]}
+    title="Deploy AI That Actually Works"
+    subtitle="Skip the strategy consulting and endless pilot projects. We build production-ready AI solutions that integrate seamlessly with your existing systems and deliver measurable business impact from day one."
+    actions={[{ variant: 'primary', text: 'Start Your AI Project', href: '/contact' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       alt: 'AI Implementation and Integration',
@@ -28,31 +28,31 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our AI Service Offerings"
-    subtitle="Transform your business with practical AI solutions that embed intelligence into workflows and deliver autonomous assistance"
+    title="Two Complementary Approaches to Business AI"
+    subtitle="Whether you need to automate existing processes or create entirely new AI-powered capabilities, our services work together to transform your business operations"
     columns={2}
     items={[
       {
         title: 'AI Integration Services',
         description:
-          'Embed AI models into business processes and systems for practical, production-ready automation. Transform existing workflows with efficiency, insights, and intelligent decision-making.',
+          'Make your existing systems smarter. Embed AI into current workflows to eliminate manual tasks, reduce errors, and handle increasing workloads without adding staff.',
         icon: 'tabler:plug-connected',
         href: '/services/ai/ai-integration',
         callToAction: {
           target: '_self',
-          text: 'Learn More',
+          text: 'Explore Integration',
           href: '/services/ai/ai-integration',
         },
       },
       {
         title: 'Generative AI & Agents Services', 
         description:
-          'Build intelligent copilots and autonomous AI assistants that reason, recommend, and act. Next-generation AI that transforms how staff interact with information and systems.',
+          'Add new AI-powered capabilities to your business. Deploy intelligent assistants that can think, reason, and complete complex tasks autonomously.',
         icon: 'tabler:robot',
         href: '/services/ai/generative-ai-agents',
         callToAction: {
           target: '_self',
-          text: 'Learn More',
+          text: 'Explore Agents',
           href: '/services/ai/generative-ai-agents',
         },
       },
@@ -62,79 +62,85 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-    id="ai-adoption"
     isReversed
-    tagline="AI Adoption Acceleration"
-    title="Fast-Track Your AI Implementation"
+    tagline="Why Choose Our AI Services"
+    title="AI Implementation Without the Hype"
     items={[
       {
-        title: 'Generative AI Solutions',
+        title: 'Skip the Strategy Paralysis',
         description:
-          'Deploy GPT-based solutions for content generation, document analysis, customer support automation, and intelligent document processing across your business workflows.',
+          'No endless consulting phases or 200-page strategy documents. We assess your needs, design solutions, and start building working AI within weeks.',
+        icon: 'tabler:clock',
       },
       {
-        title: 'Predictive Analytics Systems',
+        title: 'Enterprise-Grade Security',
         description:
-          'Implement forecasting models for demand planning, predictive maintenance, customer churn prediction, and risk assessment with real-time monitoring dashboards.',
+          'Built-in data privacy, security controls, and compliance frameworks. Your sensitive business data stays protected throughout the AI implementation.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Automation Systems',
+        title: 'Scale with Your Business',
         description:
-          'Build intelligent automation that combines RPA with AI for document processing, decision support, workflow optimization, and exception handling.',
+          'AI solutions designed to grow with your organization. Start with one workflow and expand AI capabilities across your entire business over time.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Computer Vision Applications',
+        title: 'Human-AI Collaboration',
         description:
-          'Deploy vision AI for quality control, inventory management, security monitoring, and automated inspection processes in manufacturing and retail.',
+          'AI that augments human capabilities rather than replacing people. Smart handoffs, human oversight, and seamless collaboration between staff and AI.',
+        icon: 'tabler:users',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'AI Acceleration Services',
+      alt: 'AI Implementation Approach',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Production-Ready AI Solutions</h3>
-      We focus on deploying AI tools that deliver immediate business value, moving you quickly from proof-of-concept to production systems that scale with your business.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Practical AI That Delivers</h3>
+      We focus on deploying AI solutions that solve real business problems and deliver measurable value, not just impressive demos.
     </Fragment>
   </Content>
 
   <!-- Content Widget **************** -->
 
   <Content
-    id="ai-integration"
-    tagline="AI Integration Services"
-    title="Seamless Integration with Existing Systems"
+    tagline="How Our Services Work Together"
+    title="Comprehensive AI Transformation"
     items={[
       {
-        title: 'ERP System Integration',
+        title: 'Start with Integration',
         description:
-          'Connect AI capabilities directly into SAP, Oracle, Microsoft Dynamics, and other ERP systems for intelligent forecasting, automated procurement, and optimized operations.',
+          'Begin by making your existing systems smarter with AI integration. Automate document processing, enhance CRM capabilities, and optimize operational workflows.',
+        icon: 'tabler:plug-connected',
       },
       {
-        title: 'CRM AI Enhancement',
+        title: 'Add Intelligent Assistants',
         description:
-          'Integrate AI into Salesforce, HubSpot, and other CRM platforms for lead scoring, customer sentiment analysis, sales forecasting, and personalized recommendations.',
+          'Deploy AI agents and copilots that work alongside your enhanced systems. Provide staff with intelligent assistants that can reason through complex tasks.',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Legacy System Modernization',
+        title: 'Scale Across Business',
         description:
-          'Add AI capabilities to legacy systems through APIs and microservices, enabling intelligent features without requiring complete system overhauls.',
+          'Expand successful AI implementations to additional departments and processes. Build an interconnected network of intelligent systems and assistants.',
+        icon: 'tabler:network',
       },
       {
-        title: 'Cloud AI Services',
+        title: 'Continuous Evolution',
         description:
-          'Leverage pre-built AI services from Azure Cognitive Services, Google Cloud AI, and AWS AI/ML to accelerate implementation and reduce development costs.',
+          'AI systems that learn and improve over time. Regular updates, performance optimization, and new capability additions as your business grows.',
+        icon: 'tabler:refresh',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80',
-      alt: 'AI Integration Architecture',
+      alt: 'AI Transformation Journey',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Avoiding AI Silos</h3>
-      Our integration approach ensures AI capabilities become part of your existing workflows, not separate systems that create data silos or workflow disruptions.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Strategic AI Deployment</h3>
+      Our phased approach ensures each AI implementation builds upon previous successes, creating a comprehensive intelligent business ecosystem.
     </Fragment>
   </Content>
 
