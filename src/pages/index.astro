@@ -9,7 +9,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'LeapAI Solutions — AI Adoption Accelerator | Get AI Running in Production Fast',
+  title: 'LeapAI Solutions — AI Adoption Accelerated',
   ignoreTitleTemplate: true,
 };
 ---
@@ -27,21 +27,31 @@ const metadata = {
       },
       { text: 'Our Services', href: '#services' },
     ]}
-    image={{ src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80', alt: 'LeapAI Solutions - AI and Data Analytics' }}
+    image={{
+      src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'LeapAI Solutions - AI and Data Analytics',
+    }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white">Accelerate</span> Your <span class="text-accent dark:text-white">AI Adoption</span> With LeapAI Solutions
+      <span class="text-accent dark:text-white">Accelerate</span> Your <span class="text-accent dark:text-white"
+        >AI Adoption</span
+      > With LeapAI Solutions
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Skip lengthy strategy consulting.</span> We accelerate practical AI adoption with delivery-focused packages that get AI working in production fast.</span>
+        <span class="font-semibold">Skip lengthy strategy consulting.</span> We accelerate practical AI adoption with delivery-focused
+        packages that get AI working in production fast.</span
+      >
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Our Focus:" description="Accelerating practical AI adoption - no lengthy consulting, just production-ready AI solutions with measurable ROI" />
+  <Note
+    title="Our Focus:"
+    description="Accelerating practical AI adoption - no lengthy consulting, just production-ready AI solutions with measurable ROI"
+  />
 
   <!-- Features Widget *************** -->
 
@@ -141,9 +151,7 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title">
-      Ready to Get AI Running in Production?
-    </Fragment>
+    <Fragment slot="title"> Ready to Get AI Running in Production? </Fragment>
 
     <Fragment slot="subtitle">
       Skip the strategy consulting. Start with our Foundation tier and see AI results in weeks, not months.
@@ -151,3 +159,4 @@ const metadata = {
     </Fragment>
   </CallToAction>
 </Layout>
+
