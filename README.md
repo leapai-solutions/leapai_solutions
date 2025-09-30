@@ -24,20 +24,21 @@ npm run dev
 
 All commands are run from the root of the project:
 
-| Command             | Action                                             |
-| :------------------ | :------------------------------------------------- |
-| `npm install`       | Installs dependencies                              |
-| `npm run dev`       | Starts local dev server at `localhost:4321`        |
-| `npm run build`     | Build your production site to `./dist/`            |
-| `npm run preview`   | Preview your build locally, before deploying       |
-| `npm run check`     | Check your project for errors                      |
-| `npm run fix`       | Run Eslint and format codes with Prettier          |
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:4321`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
+| `npm run check`   | Check your project for errors                |
+| `npm run fix`     | Run Eslint and format codes with Prettier    |
 
 ## ⚙️ Configuration
 
 Configuration file: `./src/config.yaml`
 
 Key settings:
+
 - Site metadata and SEO optimization
 - Google Analytics integration (add your GA4 ID)
 - Blog functionality with AI/data content
@@ -46,11 +47,13 @@ Key settings:
 ## 📝 Content Structure
 
 ### Blog Posts
+
 - "The Complete Guide to AI Transformation for Modern Businesses"
-- "From Gut Feelings to Data-Driven Decisions: A Practical Framework" 
+- "From Gut Feelings to Data-Driven Decisions: A Practical Framework"
 - "Maximizing ROI from Machine Learning Investments: A Strategic Guide"
 
 ### Pages
+
 - **Homepage** - Professional landing page with value proposition
 - **Services** - Comprehensive AI/data service offerings
 - **About** - Company story and team values
@@ -60,11 +63,13 @@ Key settings:
 ## 🎨 Customization
 
 ### Branding
+
 - Logo: Lightning bolt (⚡) icon with LeapAI Solutions name
 - Colors: Professional blue accent theme
 - Typography: Clean, business-focused styling
 
 ### Content Areas
+
 - Hero sections optimized for AI/data messaging
 - Service descriptions focused on business value
 - Professional contact forms with business fields
@@ -73,11 +78,13 @@ Key settings:
 ## 🚀 Deployment
 
 ### Build for Production
+
 ```shell
 npm run build
 ```
 
 ### Deploy Options
+
 - **Netlify**: Connect your GitHub repository
 - **Vercel**: Deploy directly from GitHub
 - **Manual**: Upload `dist/` folder to any hosting service
@@ -123,6 +130,7 @@ npm run build
 ## 🎯 Business Focus
 
 This website is specifically designed for:
+
 - Data science consulting firms
 - AI implementation companies
 - Business intelligence providers

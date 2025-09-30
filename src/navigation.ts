@@ -76,9 +76,9 @@ export const footerData = {
     {
       title: 'Resources',
       links: [
-        { text: 'AI Transformation Guide', href: getPermalink('ai-transformation-guide', 'post') },
-        { text: 'Data-Driven Decisions', href: getPermalink('data-driven-decision-making', 'post') },
-        { text: 'ML ROI Strategies', href: getPermalink('machine-learning-roi', 'post') },
+        { text: 'AI Transformation Guide', href: getPermalink('/blog/ai-transformation-guide') },
+        { text: 'Data-Driven Decisions', href: getPermalink('/blog/data-driven-decision-making') },
+        { text: 'ML ROI Strategies', href: getPermalink('/blog/machine-learning-roi') },
       ],
     },
   ],
