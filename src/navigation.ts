@@ -45,6 +45,10 @@ export const headerData = {
       ],
     },
     {
+      text: 'Pricing',
+      href: getPermalink('/pricing'),
+    },
+    {
       text: 'Blog',
       href: getBlogPermalink(),
     },
@@ -62,6 +66,7 @@ export const footerData = {
       title: 'Services',
       links: [
         { text: 'Data Platform Services', href: getPermalink('/services/data/data-platform') },
+        { text: 'Pricing & Packages', href: getPermalink('/pricing') },
         { text: 'Generative AI & Agents', href: getPermalink('/services/ai/generative-ai-agents') },
       ],
     },
@@ -92,6 +97,6 @@ export const footerData = {
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
-    © 2024 LeapAI Solutions. All rights reserved.
+    © 2025 LeapAI Solutions. All rights reserved.
   `,
 };
