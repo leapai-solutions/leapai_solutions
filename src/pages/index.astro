@@ -4,6 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -51,6 +52,36 @@ const metadata = {
   <Note
     title="Our Focus:"
     description="Accelerating practical AI adoption - no lengthy consulting, just production-ready AI solutions with measurable ROI"
+  />
+
+  <!-- How It Works Widget ************ -->
+
+  <Features2
+    id="how-it-works"
+    tagline="Our Process"
+    title="How It Works"
+    subtitle="From first conversation to AI in production — here's exactly what to expect."
+    columns={3}
+    items={[
+      {
+        title: 'Assess & Scope',
+        description:
+          'Week 1–2 · Free, no commitment. We map your data landscape and pinpoint the highest-value AI opportunity before any work begins.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Build & Deploy',
+        description:
+          'Weeks 3–14 · Foundation or Acceleration tier. Rapid implementation sprint — data platform and AI solutions deployed to production in 4–12 weeks.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Scale & Optimise',
+        description:
+          'Ongoing · Continuous tier (optional). Monthly monitoring plus quarterly AI rollouts keep your AI capabilities growing with your business.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
   />
 
   <!-- Features Widget *************** -->
