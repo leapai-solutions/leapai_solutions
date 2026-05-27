@@ -1,0 +1,112 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'AI Adoption Accelerator Packages | LeapAI Solutions',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText
+    tagline="Packages & Pricing"
+    title="AI Adoption Accelerator Packages"
+    subtitle="Fixed-scope packages with clear deliverables and timelines. No open-ended consulting fees."
+  />
+
+  <Pricing
+    title="Choose Your Starting Point"
+    subtitle="Most clients begin with Foundation, then move to Acceleration once their data platform is in place."
+    prices={[
+      {
+        title: 'Foundation',
+        subtitle: 'Get AI-ready fast',
+        price: '18k',
+        period: 'starting · 4–6 weeks',
+        items: [
+          { description: 'Cloud data platform setup (Databricks, Snowflake, or BigQuery)' },
+          { description: 'Data ingestion pipelines from CRM, ERP, files, and APIs' },
+          { description: 'Data quality & governance controls' },
+          { description: 'Centralised data warehouse or lakehouse' },
+          { description: 'Core operational metrics dashboard' },
+        ],
+        callToAction: { text: 'Get Started', href: '/contact' },
+      },
+      {
+        title: 'Acceleration',
+        subtitle: 'First AI wins in production',
+        price: '35k',
+        period: 'starting · 6–12 weeks',
+        hasRibbon: true,
+        ribbonTitle: 'Popular',
+        items: [
+          { description: 'Everything in Foundation' },
+          { description: '1–2 AI/ML solutions (e.g. demand forecasting, churn prediction, document summarisation)' },
+          { description: 'MLOps pipeline for automated training and deployment' },
+          { description: 'Integration with existing systems (Salesforce, SAP, Power BI)' },
+          { description: 'Staff training on using AI outputs' },
+        ],
+        callToAction: { text: 'Get Started', href: '/contact' },
+      },
+      {
+        title: 'Continuous',
+        subtitle: 'AI as a business capability',
+        price: '6k',
+        period: '/ month · ongoing',
+        items: [
+          { description: 'AI model monitoring & retraining to prevent drift' },
+          { description: 'New AI features or automations each quarter' },
+          { description: 'Proactive platform optimisation & cost management' },
+          { description: 'Monthly insight reports with AI-powered recommendations' },
+        ],
+        callToAction: { text: 'Get Started', href: '/contact' },
+      },
+    ]}
+  />
+
+  <Content
+    tagline="Not sure where to start?"
+    title="Most clients begin with Foundation"
+    items={[
+      {
+        title: 'Start with Foundation if...',
+        description:
+          'Your data is siloed, inconsistent, or hard to access. Before AI can work, your data needs to be connected and clean. Foundation fixes that in 4–6 weeks.',
+      },
+      {
+        title: 'Jump to Acceleration if...',
+        description:
+          'You already have a working data platform and want a specific AI solution — like demand forecasting or document processing — deployed to production fast.',
+      },
+      {
+        title: 'Add Continuous when...',
+        description:
+          'Your first AI project is live and you want to keep improving it, prevent model drift, and roll out new AI capabilities each quarter without hiring in-house.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI adoption journey',
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Book a Free Scoping Call',
+        href: '/contact',
+        icon: 'tabler:calendar',
+      },
+    ]}
+    title="Not sure which package fits?"
+    subtitle="Book a free 30-minute scoping call. We'll map your data landscape and recommend the right starting point — no commitment required."
+  />
+</Layout>
