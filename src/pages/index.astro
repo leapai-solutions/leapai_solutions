@@ -5,6 +5,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -122,6 +123,61 @@ const metadata = {
       },
     ]}
   />
+
+  <!-- Pricing Widget ***************** -->
+
+  <Pricing
+    tagline="AI Adoption Accelerator"
+    title="Choose Your Starting Point"
+    subtitle="Fixed-scope packages. Clear deliverables. Predictable investment."
+    prices={[
+      {
+        title: 'Foundation',
+        subtitle: 'Get AI-ready fast',
+        price: '18k',
+        period: 'starting · 4–6 weeks',
+        items: [
+          { description: 'Data platform setup' },
+          { description: 'Ingestion pipelines' },
+          { description: 'Governance & quality controls' },
+          { description: 'Core metrics dashboard' },
+        ],
+        callToAction: { text: 'View Full Details', href: '/pricing' },
+      },
+      {
+        title: 'Acceleration',
+        subtitle: 'First AI wins in production',
+        price: '35k',
+        period: 'starting · 6–12 weeks',
+        hasRibbon: true,
+        ribbonTitle: 'Popular',
+        items: [
+          { description: 'Everything in Foundation' },
+          { description: '1–2 production AI solutions' },
+          { description: 'MLOps pipeline' },
+          { description: 'System integration & staff training' },
+        ],
+        callToAction: { text: 'View Full Details', href: '/pricing' },
+      },
+      {
+        title: 'Continuous',
+        subtitle: 'AI as a business capability',
+        price: '6k',
+        period: '/ month · ongoing',
+        items: [
+          { description: 'Model monitoring & retraining' },
+          { description: 'Quarterly AI rollouts' },
+          { description: 'Platform optimisation' },
+          { description: 'Monthly insight reports' },
+        ],
+        callToAction: { text: 'View Full Details', href: '/pricing' },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Pricing>
 
   <!-- Content Widget **************** -->
 
