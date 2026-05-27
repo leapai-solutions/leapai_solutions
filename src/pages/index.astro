@@ -2,11 +2,10 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
+import Stats from '~/components/widgets/Stats.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Pricing from '~/components/widgets/Pricing.astro';
-import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
@@ -23,37 +22,44 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get Started',
+        text: 'Book a Free Scoping Call',
         href: '/contact',
-        icon: 'tabler:rocket',
+        icon: 'tabler:calendar',
       },
-      { text: 'Our Services', href: '#services' },
+      { text: 'See how it works', href: '#how-it-works' },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'LeapAI Solutions - AI and Data Analytics',
-    }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white">Accelerate</span> Your <span class="text-accent dark:text-white"
-        >AI Adoption</span
-      > With LeapAI Solutions
+      <span class="text-white">AI in Production.</span><br />
+      <span class="text-white">Not in <span class="text-indigo-400">Slides.</span></span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">Skip lengthy strategy consulting.</span> We accelerate practical AI adoption with delivery-focused
-        packages that get AI working in production fast.</span
-      >
+      <span class="text-slate-300">
+        We build and deploy production AI — data platform, models, and integrations — in 4–12 weeks.
+      </span>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-slate-900"></div>
     </Fragment>
   </Hero>
 
-  <!-- Note Widget ******************* -->
+  <!-- Stats Widget ****************** -->
 
-  <Note
-    title="Our Focus:"
-    description="Accelerating practical AI adoption - no lengthy consulting, just production-ready AI solutions with measurable ROI"
-  />
+  <Stats
+    isDark={true}
+    stats={[
+      { amount: '4–12 wks', title: 'First AI in production' },
+      { amount: '$18k', title: 'Starting investment' },
+      { amount: '4 stages', title: 'Proven journey' },
+      { amount: '100%', title: 'Production-focused' },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-slate-900 border-t border-slate-700"></div>
+    </Fragment>
+  </Stats>
 
   <!-- How It Works Widget ************ -->
 
@@ -90,36 +96,36 @@ const metadata = {
   <Features
     id="services"
     tagline="Our Services"
-    title="Data & AI Solutions That Drive Results"
-    subtitle="Complete data and AI solutions: from building modern data platforms and integration pipelines to accelerating AI adoption across your business."
+    title="The AI Adoption Journey"
+    subtitle="From scattered data to AI in production — a proven four-stage journey built for businesses that want results, not roadmaps."
     items={[
       {
         title: 'Data Platform Services',
         description:
           'Design & implement modern cloud data platforms ready for AI and analytics. Includes lakehouse architecture, governance, security, and cost optimization.',
         icon: 'tabler:server-2',
-        href: '/services/data/data-platform',
+        href: '/services',
       },
       {
         title: 'Data Integration Services',
         description:
           'Design & implement ETL/ELT pipelines that turn raw, siloed data into usable business assets. Includes real-time ingestion, automation, and quality controls.',
         icon: 'tabler:git-branch',
-        href: '/services/data/data-integration',
+        href: '/services',
       },
       {
         title: 'AI Integration Services',
         description:
           'Embed AI models into business processes and systems for practical, production-ready automation. Transform existing workflows with efficiency and intelligent decision-making.',
         icon: 'tabler:plug-connected',
-        href: '/services/ai/ai-integration',
+        href: '/services',
       },
       {
         title: 'Generative AI & Agents Services',
         description:
           'Build intelligent copilots and autonomous AI assistants that reason, recommend, and act. Next-generation AI that transforms how staff interact with information.',
         icon: 'tabler:robot',
-        href: '/services/ai/generative-ai-agents',
+        href: '/services',
       },
     ]}
   />
@@ -179,43 +185,33 @@ const metadata = {
     </Fragment>
   </Pricing>
 
-  <!-- Content Widget **************** -->
+  <!-- Differentiators Widget ******** -->
 
-  <Content
-    isReversed
-    tagline="Why Choose Our AI Adoption Accelerator"
-    title="Production-Ready AI Without the Wait"
+  <Features2
+    tagline="Why LeapAI"
+    title="Built for Buyers Who've Seen Too Many Demos"
+    columns={3}
     items={[
       {
-        title: 'Fast Implementation',
+        title: 'Fixed scope. No open-ended fees.',
         description:
-          'AI solutions deployed in 4-12 weeks, not months. Our battle-tested frameworks and pre-built components accelerate delivery.',
+          "Every engagement has a defined deliverable, timeline, and price. You know what you're getting before we start.",
+        icon: 'tabler:receipt',
       },
       {
-        title: 'No Strategy Paralysis',
+        title: 'Production-first, not POCs.',
         description:
-          'Skip lengthy consulting cycles. We focus on building and deploying AI solutions that deliver immediate business value.',
+          'We build for production from day one. No proof-of-concepts that get shelved — working AI in your systems.',
+        icon: 'tabler:rocket',
       },
       {
-        title: 'Predictable Investment',
+        title: 'Built for your scale.',
         description:
-          'Clear pricing, timelines, and deliverables. Know exactly what you get and when - no open-ended consulting fees.',
+          "Not enterprise consulting dressed down. Packages sized and priced for businesses that are buying their first AI.",
+        icon: 'tabler:building',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Data Analytics Dashboard',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">AI That Actually Works</h3>
-      Production-ready AI solutions with measurable ROI, delivered on time and on budget
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+  />
 
   <!-- HighlightedPosts Widget ******* -->
 
@@ -229,20 +225,20 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
+    isDark={true}
     actions={[
       {
         variant: 'primary',
-        text: 'Start Your AI Journey',
+        text: 'Book a Free Scoping Call',
         href: '/contact',
-        icon: 'tabler:rocket',
+        icon: 'tabler:calendar',
       },
     ]}
   >
-    <Fragment slot="title"> Ready to Get AI Running in Production? </Fragment>
+    <Fragment slot="title">Ready to Get AI Running in Production?</Fragment>
 
     <Fragment slot="subtitle">
-      Skip the strategy consulting. Start with our Foundation tier and see AI results in weeks, not months.
-      <br class="hidden md:inline" />Get your AI adoption roadmap today.
+      Book a free 30-minute scoping call. We'll map your data landscape and show you what's possible — no commitment required.
     </Fragment>
   </CallToAction>
 </Layout>
