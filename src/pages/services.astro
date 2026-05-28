@@ -1,232 +1,62 @@
 ---
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content from '~/components/widgets/Content.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Data & AI Services | LeapAI Solutions',
+  title: 'The AI Adoption Journey | LeapAI Solutions',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
-  <Hero
-    tagline="Services"
-    title="Data & AI Solutions That Transform Business"
-    subtitle="Comprehensive services organized into two core areas: building robust data foundations and accelerating AI adoption. From data platforms to production AI systems."
-    actions={[{ variant: 'primary', text: 'Get Started', href: '/contact' }]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80',
-      alt: 'LeapAI Solutions - Data & AI Services',
-    }}
+  <HeroText
+    tagline="Our Services"
+    title="The AI Adoption Journey"
+    subtitle="A proven four-stage path from scattered data to AI running in production - and growing."
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Data Services"
-    subtitle="Complete data solutions that transform your raw data into AI-ready business assets. From platform implementation to pipeline engineering."
-    columns={2}
+  <Steps
+    title="How We Work"
     items={[
       {
-        title: 'Data Platform Services',
+        title: 'Stage 1 · AI Readiness',
         description:
-          'Design & implement modern cloud data platforms ready for AI and analytics. Includes lakehouse architecture, governance, security, and cost optimization.',
-        icon: 'tabler:server-2',
-        href: '/services/data/data-platform',
-        callToAction: {
-          target: '_self',
-          text: 'Learn More',
-          href: '/services/data/data-platform',
-        },
+          'Free · 1–2 weeks · No commitment. We map your data landscape, identify your highest-value AI opportunity, and deliver a clear roadmap before any paid work begins. This is how every engagement starts.',
+        icon: 'tabler:search',
       },
       {
-        title: 'Data Integration Services',
+        title: 'Stage 2 · Data & AI Foundation',
         description:
-          'Design & implement ETL/ELT pipelines that turn raw, siloed data into usable business assets. Includes real-time ingestion, automation, and quality controls.',
-        icon: 'tabler:git-branch',
-        href: '/services/data/data-integration',
-        callToAction: {
-          target: '_self',
-          text: 'Learn More',
-          href: '/services/data/data-integration',
-        },
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="AI Services"
-    subtitle="Skip the AI hype and get to business value. Deploy working AI solutions that automate processes, eliminate bottlenecks, and augment your team's capabilities."
-    columns={2}
-    items={[
-      {
-        title: 'AI Integration Services',
-        description:
-          'Turn manual, time-intensive processes into automated workflows. Embed AI directly into existing business systems without disrupting operations or requiring system overhauls.',
-        icon: 'tabler:plug-connected',
-        href: '/services/ai/ai-integration',
-        callToAction: {
-          target: '_self',
-          text: 'Learn More',
-          href: '/services/ai/ai-integration',
-        },
+          'From $18k · 4–8 weeks. Your data infrastructure, built for AI. Cloud data platform (Databricks, Snowflake, or BigQuery), ingestion pipelines from CRM/ERP/APIs, data quality and governance controls, and a core metrics dashboard. The foundation every AI project needs.',
+        icon: 'tabler:database',
       },
       {
-        title: 'Generative AI & Agents Services',
+        title: 'Stage 3 · AI Solutions',
         description:
-          'Deploy intelligent assistants that think, learn, and act autonomously. Give every team member access to AI copilots that handle complex tasks and provide expert-level insights.',
+          'From $35k · 6–12 weeks. Custom AI in production. One or two AI/ML solutions tailored to your business - demand forecasting, churn prediction, document processing, or GenAI agents. Includes MLOps pipeline, system integration (Salesforce, SAP, Power BI), and staff training.',
         icon: 'tabler:robot',
-        href: '/services/ai/generative-ai-agents',
-        callToAction: {
-          target: '_self',
-          text: 'Learn More',
-          href: '/services/ai/generative-ai-agents',
-        },
-      },
-    ]}
-  />
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    items={[
-      {
-        title: 'Fast Implementation',
-        description:
-          'Get AI solutions deployed in production within 4-12 weeks, not months. Our battle-tested frameworks and pre-built components accelerate delivery.',
-        icon: 'tabler:bolt',
       },
       {
-        title: 'Production-Ready Architecture',
+        title: 'Stage 4 · Operate & Evolve',
         description:
-          'Built for scale and reliability from day one. Cloud-native platforms, automated pipelines, and enterprise-grade security and governance.',
-        icon: 'tabler:shield-check',
-      },
-      {
-        title: 'Measurable ROI',
-        description:
-          'Every AI solution is designed to deliver clear business value with trackable metrics. No black box solutions - you see exactly how AI drives results.',
+          'From $6k/month · Ongoing. Keep your AI sharp. Model monitoring and retraining to prevent drift, new AI features or automations each quarter, proactive platform optimisation, and monthly insight reports. For teams who want AI as a growing capability, not a one-off project.',
         icon: 'tabler:trending-up',
       },
-      {
-        title: 'Seamless Integration',
-        description:
-          'AI that works with your existing systems. No data silos or workflow disruption - just enhanced capabilities that fit naturally into your operations.',
-        icon: 'tabler:puzzle',
-      },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'AI Implementation Features',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Why Choose Our AI Adoption Accelerator
-      </h3>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'No Strategy Paralysis',
-        description:
-          'Skip lengthy consulting cycles and strategy documents. Get straight to building and deploying AI solutions that deliver immediate business impact.',
-        icon: 'tabler:clock',
-      },
-      {
-        title: 'Future-Ready Foundation',
-        description:
-          'Data platforms built for continuous AI expansion. Your foundation scales with your ambitions - add new AI capabilities as your business grows.',
-        icon: 'tabler:building-fortress',
-      },
-      {
-        title: 'Predictable Investment',
-        description:
-          'Clear pricing, timelines, and deliverables. No open-ended consulting fees - know exactly what you get and when you get it.',
-        icon: 'tabler:coin',
-      },
-      {
-        title: 'Continuous Innovation',
-        description:
-          'Quarterly AI feature rollouts keep you ahead of competition. Your AI capabilities continuously evolve with your business needs.',
-        icon: 'tabler:sparkles',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'AI Adoption Benefits',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Business Benefits</h3>
-    </Fragment>
-  </Content>
-
-  <!-- Testimonials Widget *********** -->
-
-  <Testimonials
-    title="Real Results from AI Adoption Clients"
-    testimonials={[
-      {
-        testimonial: `LeapAI delivered our demand forecasting AI in 8 weeks. It reduced inventory costs by 23% in the first quarter alone. No lengthy strategy phase - they just built it and it works.`,
-        name: 'Sarah Chen',
-        job: 'Operations Director, Manufacturing',
-        image: {
-          src: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Chen Image',
-        },
-      },
-      {
-        testimonial: `Their Foundation tier gave us a proper data platform in 5 weeks. Now we can launch new AI projects without starting from scratch every time. The ROI is already clear.`,
-        name: 'Marcus Rodriguez',
-        job: 'CTO, FinTech Startup',
-        image: {
-          src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Marcus Rodriguez Image',
-        },
-      },
-      {
-        testimonial: `Finally found an AI partner that focuses on implementation, not endless planning. Their automated document processing saved us 15 hours per week immediately.`,
-        name: 'Jennifer Walsh',
-        job: 'VP Operations, Professional Services',
-        image: {
-          src: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Jennifer Walsh Image',
-        },
-      },
-    ]}
-    callToAction={{
-      target: '_blank',
-      text: 'View more success stories...',
-      href: '/case-studies',
-      icon: 'tabler:chevron-right',
-    }}
   />
 
-  <!-- CallToAction Widget *********** -->
-
   <CallToAction
+    isDark={true}
     actions={[
       {
         variant: 'primary',
-        text: 'Start Your AI Journey',
+        text: 'Book a Free Scoping Call',
         href: '/contact',
+        icon: 'tabler:calendar',
       },
     ]}
-    title="Ready to Accelerate Your AI Adoption?"
-    subtitle="Skip the strategy consulting and get AI working in production. Start with our Foundation tier and see results in weeks, not months."
+    title="Start with Stage 1 - It's Free"
+    subtitle="Every engagement begins with a free 1–2 week assessment. We map your data, identify the highest-value opportunity, and hand you a roadmap - no commitment to continue."
   />
 </Layout>

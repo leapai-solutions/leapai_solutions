@@ -2,14 +2,15 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
+import Stats from '~/components/widgets/Stats.astro';
 import Features from '~/components/widgets/Features.astro';
-import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'LeapAI Solutions — AI Adoption Accelerated',
+  title: 'LeapAI Solutions - AI Adoption Accelerated',
   ignoreTitleTemplate: true,
 };
 ---
@@ -21,36 +22,64 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get Started',
+        text: 'Book a Free Scoping Call',
         href: '/contact',
-        icon: 'tabler:rocket',
+        icon: 'tabler:calendar',
       },
-      { text: 'Our Services', href: '#services' },
+      { text: 'See how it works', href: '#how-it-works' },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'LeapAI Solutions - AI and Data Analytics',
-    }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white">Accelerate</span> Your <span class="text-accent dark:text-white"
-        >AI Adoption</span
-      > With LeapAI Solutions
+      AI in Production.<br />
+      Not in <span class="text-indigo-400 dark:text-indigo-400">Slides.</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">Skip lengthy strategy consulting.</span> We accelerate practical AI adoption with delivery-focused
-        packages that get AI working in production fast.</span
-      >
+      We build and deploy production AI - data platform, models, and integrations - in 4–12 weeks.
     </Fragment>
+
   </Hero>
 
-  <!-- Note Widget ******************* -->
+  <!-- Stats Widget ****************** -->
 
-  <Note
-    title="Our Focus:"
-    description="Accelerating practical AI adoption - no lengthy consulting, just production-ready AI solutions with measurable ROI"
+  <Stats
+    isDark={true}
+    stats={[
+      { amount: '4–12 wks', title: 'First AI in production' },
+      { amount: '$18k', title: 'Starting investment' },
+      { amount: '4 stages', title: 'Proven journey' },
+      { amount: '100%', title: 'Production-focused' },
+    ]}
+  />
+
+  <!-- How It Works Widget ************ -->
+
+  <Features2
+    id="how-it-works"
+    tagline="Our Process"
+    title="How It Works"
+    subtitle="From first conversation to AI in production - here's exactly what to expect."
+    columns={3}
+    items={[
+      {
+        title: 'Assess & Scope',
+        description:
+          'Week 1–2 · Free, no commitment. We map your data landscape and pinpoint the highest-value AI opportunity before any work begins.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Build & Deploy',
+        description:
+          'Weeks 3–14 · Foundation or Acceleration tier. Rapid implementation sprint - data platform and AI solutions deployed to production in 4–12 weeks.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Scale & Optimise',
+        description:
+          'Ongoing · Continuous tier (optional). Monthly monitoring plus quarterly AI rollouts keep your AI capabilities growing with your business.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
   />
 
   <!-- Features Widget *************** -->
@@ -58,77 +87,122 @@ const metadata = {
   <Features
     id="services"
     tagline="Our Services"
-    title="Data & AI Solutions That Drive Results"
-    subtitle="Complete data and AI solutions: from building modern data platforms and integration pipelines to accelerating AI adoption across your business."
+    title="The AI Adoption Journey"
+    subtitle="From scattered data to AI in production - a proven four-stage journey built for businesses that want results, not roadmaps."
     items={[
       {
-        title: 'Data Platform Services',
+        title: 'Stage 1 · AI Readiness',
         description:
-          'Design & implement modern cloud data platforms ready for AI and analytics. Includes lakehouse architecture, governance, security, and cost optimization.',
-        icon: 'tabler:server-2',
-        href: '/services/data/data-platform',
+          'Free · 1–2 weeks · No commitment. We map your data landscape, identify your highest-value AI opportunity, and deliver a clear roadmap before any paid work begins.',
+        icon: 'tabler:search',
+        href: '/services',
       },
       {
-        title: 'Data Integration Services',
+        title: 'Stage 2 · Data & AI Foundation',
         description:
-          'Design & implement ETL/ELT pipelines that turn raw, siloed data into usable business assets. Includes real-time ingestion, automation, and quality controls.',
-        icon: 'tabler:git-branch',
-        href: '/services/data/data-integration',
+          'From $18k · 4–8 weeks. Cloud data platform, ingestion pipelines, data quality and governance controls, and a core metrics dashboard - the foundation every AI project needs.',
+        icon: 'tabler:database',
+        href: '/services',
       },
       {
-        title: 'AI Integration Services',
+        title: 'Stage 3 · AI Solutions',
         description:
-          'Embed AI models into business processes and systems for practical, production-ready automation. Transform existing workflows with efficiency and intelligent decision-making.',
-        icon: 'tabler:plug-connected',
-        href: '/services/ai/ai-integration',
-      },
-      {
-        title: 'Generative AI & Agents Services',
-        description:
-          'Build intelligent copilots and autonomous AI assistants that reason, recommend, and act. Next-generation AI that transforms how staff interact with information.',
+          'From $35k · 6–12 weeks. Custom AI in production - demand forecasting, churn prediction, document processing, or GenAI agents. Includes MLOps pipeline, system integration, and staff training.',
         icon: 'tabler:robot',
-        href: '/services/ai/generative-ai-agents',
+        href: '/services',
+      },
+      {
+        title: 'Stage 4 · Operate & Evolve',
+        description:
+          'From $6k/month · Ongoing. Model monitoring, quarterly AI rollouts, platform optimisation, and monthly insight reports. AI as a growing capability, not a one-off project.',
+        icon: 'tabler:trending-up',
+        href: '/services',
       },
     ]}
   />
 
-  <!-- Content Widget **************** -->
+  <!-- Pricing Widget ***************** -->
 
-  <Content
-    isReversed
-    tagline="Why Choose Our AI Adoption Accelerator"
-    title="Production-Ready AI Without the Wait"
-    items={[
+  <Pricing
+    tagline="AI Adoption Accelerator"
+    title="Choose Your Starting Point"
+    subtitle="Fixed-scope packages. Clear deliverables. Predictable investment."
+    prices={[
       {
-        title: 'Fast Implementation',
-        description:
-          'AI solutions deployed in 4-12 weeks, not months. Our battle-tested frameworks and pre-built components accelerate delivery.',
+        title: 'Foundation',
+        subtitle: 'Get AI-ready fast',
+        price: '18k',
+        period: 'starting · 4–6 weeks',
+        items: [
+          { description: 'Data platform setup' },
+          { description: 'Ingestion pipelines' },
+          { description: 'Governance & quality controls' },
+          { description: 'Core metrics dashboard' },
+        ],
+        callToAction: { text: 'View Full Details', href: '/pricing' },
       },
       {
-        title: 'No Strategy Paralysis',
-        description:
-          'Skip lengthy consulting cycles. We focus on building and deploying AI solutions that deliver immediate business value.',
+        title: 'Acceleration',
+        subtitle: 'First AI wins in production',
+        price: '35k',
+        period: 'starting · 6–12 weeks',
+        hasRibbon: true,
+        ribbonTitle: 'Popular',
+        items: [
+          { description: 'Everything in Foundation' },
+          { description: '1–2 production AI solutions' },
+          { description: 'MLOps pipeline' },
+          { description: 'System integration & staff training' },
+        ],
+        callToAction: { text: 'View Full Details', href: '/pricing' },
       },
       {
-        title: 'Predictable Investment',
-        description:
-          'Clear pricing, timelines, and deliverables. Know exactly what you get and when - no open-ended consulting fees.',
+        title: 'Continuous',
+        subtitle: 'AI as a business capability',
+        price: '6k',
+        period: '/ month · ongoing',
+        items: [
+          { description: 'Model monitoring & retraining' },
+          { description: 'Quarterly AI rollouts' },
+          { description: 'Platform optimisation' },
+          { description: 'Monthly insight reports' },
+        ],
+        callToAction: { text: 'View Full Details', href: '/pricing' },
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Data Analytics Dashboard',
-    }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">AI That Actually Works</h3>
-      Production-ready AI solutions with measurable ROI, delivered on time and on budget
-    </Fragment>
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Pricing>
+
+  <!-- Differentiators Widget ******** -->
+
+  <Features2
+    tagline="Why LeapAI"
+    title="Built for Buyers Who've Seen Too Many Demos"
+    columns={3}
+    items={[
+      {
+        title: 'Fixed scope. No open-ended fees.',
+        description:
+          "Every engagement has a defined deliverable, timeline, and price. You know what you're getting before we start.",
+        icon: 'tabler:receipt',
+      },
+      {
+        title: 'Production-first, not POCs.',
+        description:
+          'We build for production from day one. No proof-of-concepts that get shelved - working AI in your systems.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Built for your scale.',
+        description:
+          "Not enterprise consulting dressed down. Packages sized and priced for businesses that are buying their first AI.",
+        icon: 'tabler:building',
+      },
+    ]}
+  />
 
   <!-- HighlightedPosts Widget ******* -->
 
@@ -142,20 +216,20 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
+    isDark={true}
     actions={[
       {
         variant: 'primary',
-        text: 'Start Your AI Journey',
+        text: 'Book a Free Scoping Call',
         href: '/contact',
-        icon: 'tabler:rocket',
+        icon: 'tabler:calendar',
       },
     ]}
   >
-    <Fragment slot="title"> Ready to Get AI Running in Production? </Fragment>
+    <Fragment slot="title">Ready to Get AI Running in Production?</Fragment>
 
     <Fragment slot="subtitle">
-      Skip the strategy consulting. Start with our Foundation tier and see AI results in weeks, not months.
-      <br class="hidden md:inline" />Get your AI adoption roadmap today.
+      Book a free 30-minute scoping call. We'll map your data landscape and show you what's possible - no commitment required.
     </Fragment>
   </CallToAction>
 </Layout>

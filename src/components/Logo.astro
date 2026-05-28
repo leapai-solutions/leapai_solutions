@@ -1,10 +1,11 @@
 ---
 import { SITE } from 'astrowind:config';
-import logo from '~/assets/images/logo.png';
+import logo from '~/assets/images/logo.svg?raw';
 ---
 
-<img 
-  src={logo.src} 
-  alt={SITE?.name || "LeapAI Solutions"} 
-  class="h-10 w-auto md:h-12" 
+<span
+  class="inline-flex h-10 md:h-12 [&>svg]:h-full [&>svg]:w-auto"
+  aria-label={SITE?.name || 'LeapAI Solutions'}
+  role="img"
+  set:html={logo}
 />

@@ -9,40 +9,10 @@ export const headerData = {
     {
       text: 'Services',
       href: getPermalink('/services'),
-      megaMenu: [
-        {
-          title: 'Data Services',
-          href: getPermalink('/services/data'),
-          items: [
-            {
-              text: 'Data Platform Services',
-              href: getPermalink('/services/data/data-platform'),
-              description: 'Design & implement modern cloud data platforms ready for AI and analytics'
-            },
-            {
-              text: 'Data Integration Services',
-              href: getPermalink('/services/data/data-integration'),
-              description: 'Design & implement ETL/ELT pipelines that turn raw data into business assets'
-            },
-          ],
-        },
-        {
-          title: 'AI Services',
-          href: getPermalink('/services/ai'),
-          items: [
-            {
-              text: 'AI Integration Services',
-              href: getPermalink('/services/ai/ai-integration'),
-              description: 'Embed AI models into business processes and systems for practical automation'
-            },
-            {
-              text: 'Generative AI & Agents Services',
-              href: getPermalink('/services/ai/generative-ai-agents'),
-              description: 'Build intelligent copilots and autonomous AI assistants that reason and act'
-            },
-          ],
-        },
-      ],
+    },
+    {
+      text: 'Pricing',
+      href: getPermalink('/pricing'),
     },
     {
       text: 'Blog',
@@ -61,8 +31,8 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'Data Platform Services', href: getPermalink('/services/data/data-platform') },
-        { text: 'Generative AI & Agents', href: getPermalink('/services/ai/generative-ai-agents') },
+        { text: 'The AI Adoption Journey', href: getPermalink('/services') },
+        { text: 'Pricing & Packages', href: getPermalink('/pricing') },
       ],
     },
     {
@@ -92,6 +62,6 @@ export const footerData = {
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
-    © 2024 LeapAI Solutions. All rights reserved.
+    © 2025 LeapAI Solutions. All rights reserved.
   `,
 };
