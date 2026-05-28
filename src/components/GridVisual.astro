@@ -1,0 +1,37 @@
+---
+---
+<div class="relative w-full overflow-hidden min-h-64 md:min-h-96" style="background: #030620;">
+  <!-- dot grid -->
+  <div
+    class="absolute inset-0"
+    style="background-image: linear-gradient(rgba(99,102,241,0.11) 1px, transparent 1px), linear-gradient(90deg, rgba(99,102,241,0.11) 1px, transparent 1px); background-size: 28px 28px;"
+  ></div>
+
+  <!-- central glow -->
+  <div
+    class="absolute rounded-full"
+    style="width:200px;height:200px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(99,102,241,0.4) 0%,transparent 70%);filter:blur(24px);"
+  ></div>
+
+  <!-- node 1 -->
+  <div class="absolute rounded-full" style="width:10px;height:10px;background:#6366f1;top:20%;left:13%;transform:translate(-50%,-50%);box-shadow:0 0 16px #6366f1;"></div>
+  <!-- node 2 -->
+  <div class="absolute rounded-full" style="width:7px;height:7px;background:#818cf8;top:63%;left:42%;transform:translate(-50%,-50%);box-shadow:0 0 11px #818cf8;"></div>
+  <!-- node 3 -->
+  <div class="absolute rounded-full" style="width:6px;height:6px;background:#a5b4fc;top:33%;left:58%;transform:translate(-50%,-50%);box-shadow:0 0 9px #a5b4fc;"></div>
+  <!-- node 4 -->
+  <div class="absolute rounded-full" style="width:8px;height:8px;background:#6366f1;top:80%;left:20%;transform:translate(-50%,-50%);box-shadow:0 0 13px #6366f1;"></div>
+
+  <!-- connecting lines — viewBox 0 0 100 100 matches percentage node positions -->
+  <svg
+    class="absolute inset-0 w-full h-full"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+  >
+    <line x1="13" y1="20" x2="42" y2="63" stroke="rgba(99,102,241,0.4)"   stroke-width="0.3"/>
+    <line x1="42" y1="63" x2="58" y2="33" stroke="rgba(129,140,248,0.35)" stroke-width="0.3"/>
+    <line x1="13" y1="20" x2="20" y2="80" stroke="rgba(99,102,241,0.25)"  stroke-width="0.2"/>
+    <line x1="20" y1="80" x2="42" y2="63" stroke="rgba(99,102,241,0.3)"   stroke-width="0.2"/>
+  </svg>
+</div>
