@@ -4,6 +4,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import GridVisual from '~/components/GridVisual.astro';
 
 const metadata = {
   title: 'About LeapAI Solutions - We Build AI That Ships',
@@ -15,11 +16,11 @@ const metadata = {
 
   <Hero
     tagline="About LeapAI Solutions"
-    image={{
-      src: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80',
-      alt: 'AI and Data Science Team Collaboration',
-    }}
   >
+    <Fragment slot="image">
+      <GridVisual />
+    </Fragment>
+
     <Fragment slot="title">
       We Build AI <br />
       <span class="text-accent dark:text-white">That Ships</span>
@@ -52,10 +53,6 @@ const metadata = {
           "Enterprise AI budgets and timelines don't fit growing businesses. Our packages are scoped and priced for companies buying their first AI - not their fifth.",
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'LeapAI Solutions team',
-    }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why We Exist</h3>
@@ -131,10 +128,6 @@ const metadata = {
           "Stage 4 (Operate & Evolve) is optional. Some clients just need Foundation or one AI project. We're not here to lock you in.",
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'AI delivery commitment',
-    }}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
